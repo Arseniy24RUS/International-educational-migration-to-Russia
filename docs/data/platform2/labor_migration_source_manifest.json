@@ -1,0 +1,64 @@
+{
+  "sources": [
+    {
+      "source_key": "foreign_labor_migration_v5_history_region_sector",
+      "source_url_or_file": "Foreign labor migration/docs/data/factual_history_region_sector.csv",
+      "retrieved_at": "2026-05-26T19:33:12+00:00",
+      "source_period": "2017-2024",
+      "row_count": 13600,
+      "observation_status": "observed_v5_history_artifact",
+      "sha256_or_etag": "48b5ab535e9e4d10d07e972ab6e78834ad255075aaa8d293af971d6c958c7eba",
+      "bytes": 4453810
+    },
+    {
+      "source_key": "foreign_labor_migration_v5_forecast_region_sector",
+      "source_url_or_file": "Foreign labor migration/docs/data/region_sector_forecast.csv",
+      "retrieved_at": "2026-05-27T13:57:22+00:00",
+      "source_period": "2025-2050",
+      "row_count": 43446,
+      "observation_status": "calculated_v5_model_output",
+      "sha256_or_etag": "bed04356e8a570a2911dde917ab538bd3dd43ad84aa6d09cf900456bb3680985",
+      "bytes": 34342966
+    },
+    {
+      "source_key": "foreign_labor_migration_v5_metadata",
+      "source_url_or_file": "Foreign labor migration/docs/data/metadata.json",
+      "retrieved_at": "2026-05-27T13:57:22+00:00",
+      "source_period": "2025-2050",
+      "row_count": null,
+      "observation_status": "verified_v5_metadata",
+      "sha256_or_etag": "e1303a1ae38001cac767467ec6b898ef71de64e7fc3551d7da55b8bf881145c6",
+      "bytes": 3998
+    },
+    {
+      "source_key": "foreign_labor_migration_v5_qa_model_summary",
+      "source_url_or_file": "Foreign labor migration/outputs/model_run_v5/qa_model_summary.json",
+      "retrieved_at": "2026-05-27T13:56:30+00:00",
+      "source_period": "2025-2050",
+      "row_count": null,
+      "observation_status": "verified_v5_qa_summary",
+      "sha256_or_etag": "82a86497d987450d18118d55c99af686c2ed6d1bd92b447ae09e37c8479c107a",
+      "bytes": 4710
+    },
+    {
+      "source_key": "foreign_labor_migration_v5_model_validation_report",
+      "source_url_or_file": "Foreign labor migration/outputs/codex_audit_v5/model_validation_report.md",
+      "retrieved_at": "2026-05-27T13:56:34+00:00",
+      "source_period": "2025-2050",
+      "row_count": null,
+      "observation_status": "verified_v5_audit_report",
+      "sha256_or_etag": "245de62819804680313498838b4fc6ee754936d032b105022bc4c585e0a44f81",
+      "bytes": 11102
+    },
+    {
+      "source_key": "foreign_labor_migration_v5_final_report_ru",
+      "source_url_or_file": "Foreign labor migration/outputs/codex_audit_v5/final_report_ru.md",
+      "retrieved_at": "2026-05-27T14:09:45+00:00",
+      "source_period": "2025-2050",
+      "row_count": null,
+      "observation_status": "verified_v5_executive_report",
+      "sha256_or_etag": "ff7778959aabc1f3dcf721f72bba05a92ca9911c5dbf596439960bb0498bcdce",
+      "bytes": 10586
+    }
+  ]
+}

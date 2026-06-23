@@ -1,0 +1,442 @@
+:root {
+  --mgimo-navy-950: #03152f;
+  --mgimo-navy-900: #061d43;
+  --mgimo-navy-800: #0a2b5e;
+  --mgimo-blue-600: #185c96;
+  --mgimo-blue-100: #dfeaf5;
+  --mgimo-gold-500: #c99b2e;
+  --mgimo-gold-100: #f7edcf;
+  --mgimo-surface: #ffffff;
+  --mgimo-surface-subtle: #f5f7fb;
+  --mgimo-border: #d7dfeb;
+  --mgimo-text: #18243a;
+  --mgimo-muted: #65728a;
+  --mgimo-focus: #ffbf47;
+  --mgimo-radius-md: 12px;
+  --mgimo-shadow-header: 0 8px 30px rgba(3, 21, 47, 0.14);
+}
+
+.skip-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 5000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  max-width: calc(100vw - 20px);
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--mgimo-navy-900);
+  font-weight: 800;
+  line-height: 1.2;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(3, 21, 47, 0.28);
+  transform: translateY(calc(-100% - 20px));
+  transition: transform 0.15s ease;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+  outline: 3px solid var(--mgimo-focus);
+  outline-offset: 3px;
+}
+
+.leaflet-marker-icon,
+.leaflet-interactive {
+  min-width: 28px;
+  min-height: 28px;
+}
+
+.app-header > .mgimo-shell-bar,
+.labor-platform-header > .mgimo-shell-bar,
+.platform2-header > .mgimo-shell-bar {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) auto;
+  grid-template-areas: "brand tools" "nav nav";
+  align-items: center;
+  gap: 14px 24px;
+  min-height: 0;
+  padding: 16px clamp(18px, 3vw, 46px) 0;
+  background:
+    radial-gradient(circle at 86% -40%, rgba(201, 155, 46, 0.25), transparent 33%),
+    linear-gradient(120deg, var(--mgimo-navy-950), var(--mgimo-navy-900) 55%, #0a315f);
+  color: #fff;
+  box-shadow: var(--mgimo-shadow-header);
+  border: 0;
+  position: relative;
+  z-index: 600;
+}
+
+.mgimo-shell-brand {
+  grid-area: brand;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 20px;
+}
+
+.mgimo-shell-bar .institution-lockup {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 12px;
+}
+
+.mgimo-shell-bar .logo-link {
+  display: inline-grid;
+  place-items: center;
+  min-width: 46px;
+  min-height: 46px;
+  border-radius: 9px;
+  outline-offset: 4px;
+}
+
+.mgimo-shell-bar .brand-logo {
+  display: block;
+  object-fit: contain;
+  width: auto;
+  max-width: 86px;
+  height: 42px;
+  filter: brightness(0) invert(1);
+}
+
+.mgimo-shell-bar .fnisc-logo {
+  max-width: 58px;
+}
+
+.mgimo-shell-bar .brand-divider {
+  width: 1px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.mgimo-shell-title-block {
+  min-width: 0;
+}
+
+.mgimo-shell-eyebrow {
+  display: block;
+  color: #ecd28a;
+  font-size: 0.69rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.mgimo-shell-title-block h1 {
+  color: #fff;
+  font-size: clamp(1.14rem, 1.75vw, 1.7rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  margin: 0;
+  max-width: 920px;
+}
+
+.mgimo-shell-title-block p {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 5px 9px;
+  margin: 7px 0 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.78rem;
+  line-height: 1.3;
+}
+
+.mgimo-shell-title-block p strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+.mgimo-shell-page-code {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 2px 7px;
+  border: 1px solid rgba(236, 210, 138, 0.45);
+  border-radius: 999px;
+  background: rgba(201, 155, 46, 0.14);
+  color: #f3d98f;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.mgimo-shell-tools {
+  grid-area: tools;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+}
+
+.mgimo-shell-language,
+.mgimo-shell-modules summary,
+.mgimo-shell-menu-button {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-radius: 9px;
+}
+
+.mgimo-shell-language {
+  display: inline-flex;
+  overflow: hidden;
+  padding: 3px;
+}
+
+.mgimo-shell-language .segment {
+  min-width: 42px;
+  min-height: 34px;
+  padding: 6px 9px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 800;
+}
+
+.mgimo-shell-language .segment.active {
+  background: #fff;
+  color: var(--mgimo-navy-900);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mgimo-shell-modules {
+  position: relative;
+}
+
+.mgimo-shell-modules summary {
+  cursor: pointer;
+  list-style: none;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  font-size: 0.78rem;
+  font-weight: 750;
+}
+
+.mgimo-shell-modules summary::-webkit-details-marker { display: none; }
+
+.mgimo-shell-module-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 9px);
+  display: grid;
+  min-width: 230px;
+  gap: 6px;
+  padding: 9px;
+  border: 1px solid var(--mgimo-border);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 18px 55px rgba(3, 21, 47, 0.25);
+}
+
+.mgimo-shell-module-link {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 11px;
+  border-radius: 8px;
+  color: var(--mgimo-text);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.mgimo-shell-module-link:hover,
+.mgimo-shell-module-link.active {
+  background: var(--mgimo-blue-100);
+  color: var(--mgimo-navy-900);
+}
+
+.mgimo-shell-menu-button { display: none; min-height: 42px; padding: 7px 13px; font-weight: 750; }
+
+.mgimo-shell-nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: repeat(10, minmax(76px, 1fr));
+  align-items: stretch;
+  gap: 4px;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.mgimo-shell-nav-link {
+  min-width: 0;
+  min-height: 55px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 7px;
+  padding: 8px 7px 10px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  background: transparent;
+  transition: background 140ms ease, color 140ms ease, border-color 140ms ease;
+}
+
+.mgimo-shell-nav-link:hover {
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+}
+
+.mgimo-shell-nav-link.active {
+  color: #fff;
+  border-bottom-color: var(--mgimo-gold-500);
+  background: linear-gradient(to top, rgba(201, 155, 46, 0.14), transparent 80%);
+}
+
+.mgimo-shell-step {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 999px;
+  background: #163b64;
+  font-size: 0.62rem;
+  font-weight: 850;
+  color: #ffffff;
+}
+
+.mgimo-shell-nav-link.active .mgimo-shell-step {
+  border-color: #f1d88e;
+  background: #f1d88e;
+  color: #102b4f;
+}
+
+.mgimo-shell-link-copy {
+  min-width: 0;
+  display: grid;
+  gap: 1px;
+}
+
+.mgimo-shell-link-copy strong {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: clamp(0.64rem, 0.75vw, 0.76rem);
+  line-height: 1.1;
+}
+
+.mgimo-shell-link-copy small {
+  color: rgba(255, 255, 255, 0.46);
+  font-size: 0.55rem;
+  line-height: 1;
+}
+
+.mgimo-shell-module-links { display: none; }
+
+.mgimo-shell-bar a:focus-visible,
+.mgimo-shell-bar button:focus-visible,
+.mgimo-shell-bar summary:focus-visible {
+  outline: 3px solid var(--mgimo-focus);
+  outline-offset: 3px;
+}
+
+@media (max-width: 1260px) {
+  .mgimo-shell-nav { grid-template-columns: repeat(5, minmax(110px, 1fr)); }
+  .mgimo-shell-nav-link { min-height: 45px; padding-block: 6px; }
+  .mgimo-shell-link-copy strong { font-size: 0.7rem; }
+}
+
+@media (max-width: 860px) {
+  .app-header > .mgimo-shell-bar,
+  .labor-platform-header > .mgimo-shell-bar,
+  .platform2-header > .mgimo-shell-bar {
+    grid-template-columns: 1fr auto;
+    gap: 11px 14px;
+    padding: 12px 14px;
+  }
+  .mgimo-shell-brand { gap: 12px; }
+  .mgimo-shell-bar .institution-lockup { display: none; }
+  .mgimo-shell-title-block h1 { font-size: 1.07rem; }
+  .mgimo-shell-title-block p span:last-child { display: none; }
+  .mgimo-shell-eyebrow { font-size: 0.58rem; }
+  .mgimo-shell-modules { display: none; }
+  .mgimo-shell-menu-button { display: inline-flex; align-items: center; }
+  .mgimo-shell-language .segment { min-width: 36px; min-height: 32px; padding: 4px 6px; }
+  .mgimo-shell-nav {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-top: 8px;
+  }
+  .mgimo-shell-nav.open { display: grid; }
+  .mgimo-shell-nav-link {
+    min-height: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 9px;
+    padding: 7px 9px;
+  }
+  .mgimo-shell-nav-link.active { border-color: rgba(236, 210, 138, 0.7); }
+  .mgimo-shell-link-copy strong { font-size: 0.74rem; }
+  .mgimo-shell-module-links {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    padding-top: 7px;
+  }
+  .mgimo-shell-module-links .mgimo-shell-module-link {
+    justify-content: center;
+    min-height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.07);
+    text-align: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .mgimo-shell-title-block p { margin-top: 4px; }
+  .mgimo-shell-page-code { display: none; }
+  .mgimo-shell-tools { gap: 5px; }
+  .mgimo-shell-menu-button { padding-inline: 9px; font-size: 0.72rem; }
+  .mgimo-shell-nav { grid-template-columns: 1fr; }
+  .mgimo-shell-module-links { grid-template-columns: 1fr; }
+}
+
+/* Shared-shell release override: legacy page styles must not force the mobile menu open. */
+@media (max-width: 860px) {
+  .app-header .mgimo-shell-nav,
+  .platform2-header .mgimo-shell-nav,
+  .labor-platform-header .mgimo-shell-nav {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+  }
+  .app-header .mgimo-shell-nav.open,
+  .platform2-header .mgimo-shell-nav.open,
+  .labor-platform-header .mgimo-shell-nav.open {
+    display: grid;
+  }
+}
+@media (max-width: 520px) {
+  .app-header .mgimo-shell-nav,
+  .platform2-header .mgimo-shell-nav,
+  .labor-platform-header .mgimo-shell-nav {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.mgimo-shell-nav {
+  max-width: none;
+}

@@ -1,0 +1,11 @@
+{
+  "status": "verified_open_source_available",
+  "source_key": "unesco_uis_opri_202602",
+  "rows": 2041,
+  "origins": 200,
+  "years": [
+    2011,
+    2024
+  ],
+  "note": "Russia official detailed origin-year open table was not reconstructed; UIS official open bulk provides verified Russia inbound origin-year rows."
+}

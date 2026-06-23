@@ -1,0 +1,173 @@
+# Source registry for MGIMO Platform 2.0.
+# Все источники должны проходить через probe → raw snapshot/manifest → curated table → model output → UI trace.
+
+sources:
+  world_bank_wdi_api:
+    title: World Bank Indicators API / World Development Indicators
+    type: official_api
+    priority: 1
+    url: https://api.worldbank.org/v2/
+    tested_probe: https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json
+    observed_probe_result:
+      lastupdated: "2026-04-08"
+      sample_indicator: SP.POP.TOTL
+      sample_total_records: 17556
+    candidate_fields:
+      - SP.POP.TOTL
+      - SP.POP.1524.TO.UN
+      - NY.GDP.PCAP.PP.CD
+      - IT.NET.USER.ZS
+      - SE.TER.ENRR
+      - SE.XPD.TOTL.GD.ZS
+      - BX.KLT.DINV.WD.GD.ZS
+      - NE.TRD.GNFS.ZS
+    allowed_use:
+      - country_year_features
+      - controls_for_gravity_model
+      - affordability_access
+      - operational_feasibility
+    forbidden_use:
+      - observed_mgimo_student_headcount
+
+  un_wpp2024:
+    title: UN World Population Prospects 2024, Population by Single Age and Sex
+    type: official_bulk
+    priority: 1
+    url: https://population.un.org/wpp/downloads
+    candidate_fields:
+      - population_total
+      - pop_15_24
+      - pop_25_29
+      - age_sex_pyramid
+      - youth_market_forecast_2050
+    allowed_use:
+      - youth_market_forecast
+      - demographic_controls
+      - age_sex_pyramid
+    required_validation:
+      - pinned_manifest
+      - sha256
+      - bytes
+      - official_estimate_or_projection
+
+  unesco_uis_bulk_data:
+    title: UNESCO UIS Data Browser / Bulk Data Download Service
+    type: official_bulk_or_api
+    priority: 1
+    url: https://databrowser.uis.unesco.org/
+    candidate_datasets:
+      - uis006
+    candidate_indicators:
+      - MOR.5T8.40510
+      - outbound_mobility_ratio
+      - internationally_mobile_students_by_destination
+      - inbound_mobility_by_origin_destination
+    allowed_use:
+      - international_education_migration_od
+      - outbound_mobility
+      - tertiary_education_market
+    required_action:
+      - verify_current_bulk_endpoint
+      - download_official_csv_archive
+      - preserve_archive_hash
+      - inspect country/destination dimensions
+
+  miccedu_monitoring_higher_education:
+    title: Мониторинг эффективности деятельности образовательных организаций высшего образования
+    type: official_public_materials
+    priority: 1
+    url: https://monitoring.miccedu.ru/
+    candidate_years: "2015-2025 archive plus 2025 current release"
+    allowed_use:
+      - russian_inbound_by_origin_probe
+      - institutional_context
+      - russian_higher_education_totals
+    required_action:
+      - crawl archive pages
+      - download public Excel/HTML materials where available
+      - search variables for foreign students by citizenship/country
+      - reject aggregate-only files for gravity dependent variable if origin is absent
+
+  hh_api:
+    title: HeadHunter API
+    type: public_api
+    priority: 1
+    url: https://api.hh.ru/
+    allowed_use:
+      - vacancy_competency_aggregates
+      - program_market_fit
+    required_action:
+      - query documented vacancy search endpoint
+      - store raw response manifest
+      - aggregate only non-personal fields for public UI
+
+  pew_global_attitudes:
+    title: Pew Research Center Global Attitudes survey data
+    type: survey_microdata_or_aggregate
+    priority: 2
+    url: https://www.pewresearch.org/global/
+    allowed_use:
+      - friendliness_survey_component
+    constraints:
+      - account_or_download_terms_may_apply
+      - never infer missing countries with LLM
+
+  world_values_survey:
+    title: World Values Survey / EVS trend files
+    type: survey_microdata
+    priority: 2
+    url: https://www.worldvaluessurvey.org/
+    allowed_use:
+      - friendliness_survey_component
+      - cultural_language_context
+    constraints:
+      - harmonize waves and questions explicitly
+
+  un_digital_library_voting_data:
+    title: United Nations Digital Library Voting Data
+    type: official_open_data
+    priority: 2
+    url: https://digitallibrary.un.org/
+    allowed_use:
+      - diplomatic_alignment_component
+    required_action:
+      - obtain reproducible voting records
+      - calculate alignment formula in code
+  trudvsem_open_data_api:
+    title: ЕЦП «Работа в России» — открытый API вакансий
+    type: official_public_api
+    priority: 1
+    url: https://opendata.trudvsem.ru/api/v1/vacancies
+    verified_at: "2026-06-18"
+    observed_api_total_at_verification: 528153
+    allowed_use:
+      - vacancy_record_database
+      - explicit_competency_database
+      - program_labor_demand_signal
+      - country_program_management_priority
+    prohibited_interpretations:
+      - keyword_query_totals_as_unique_vacancies
+      - active_vacancy_stock_as_historical_flow
+      - foreign_worker_eligible_as_foreign_worker_count
+    privacy_exclusions:
+      - contact_person
+      - phone
+      - email
+      - exact_street_address
+      - inn
+      - kpp
+      - ogrn
+      - companycode
+    required_action:
+      - paginate_all_configured_queries
+      - sanitize_before_persistence
+      - deduplicate_by_vacancy_id
+      - preserve_matched_queries
+      - retain_request_hashes_and_truncation_flags
+      - collect_weekly_snapshots
+    current_bundled_evidence:
+      sanitized_record_rows: 9
+      explicit_skill_rows: 46
+      keyword_signal_rows: 10
+      program_groups: 5
+

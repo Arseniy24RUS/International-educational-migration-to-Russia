@@ -1,0 +1,68 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps
+      - run: npm run frontend:public:build
+      - run: npm run frontend:public:validate
+      - run: node scripts/run_github_pages_release_qa.cjs --engine chromium
+      - run: node scripts/run_github_pages_release_qa.cjs --engine webkit
+      - uses: actions/upload-artifact@v4
+        with:
+          name: github-pages-public-release
+          path: release/github-pages
+          if-no-files-found: error
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: github-pages-public-release-qa
+          path: artifacts/github-pages-release
+          if-no-files-found: ignore
+          retention-days: 7
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: github-pages-public-release
+          path: release/github-pages
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: release/github-pages
+          include-hidden-files: true
+      - id: deployment
+        uses: actions/deploy-pages@v4

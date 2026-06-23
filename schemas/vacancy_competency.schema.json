@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vacancy and competency aggregate",
+  "type": "object",
+  "required": [
+    "country_or_area",
+    "query_group",
+    "period_start",
+    "period_end",
+    "vacancies_found",
+    "source_key",
+    "observation_status"
+  ],
+  "properties": {
+    "country_or_area": {
+      "type": "string"
+    },
+    "query_group": {
+      "type": "string"
+    },
+    "period_start": {
+      "type": "string"
+    },
+    "period_end": {
+      "type": "string"
+    },
+    "vacancies_found": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "median_salary_from": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "median_salary_to": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "currency": {
+      "type": "string"
+    },
+    "top_skills_json": {
+      "type": "string"
+    },
+    "top_employers_json": {
+      "type": "string"
+    },
+    "experience_distribution_json": {
+      "type": "string"
+    },
+    "source_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_title": {
+      "type": "string"
+    },
+    "source_url_or_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "raw_value": {},
+    "unit": {
+      "type": "string"
+    },
+    "observation_status": {
+      "type": "string",
+      "enum": [
+        "official_or_reference",
+        "official_estimate",
+        "official_projection",
+        "harmonized_open_data",
+        "calculated",
+        "modelled",
+        "scenario_assumption_not_observed",
+        "missing_no_open_source",
+        "blocked_no_observed_inbound_flow"
+      ]
+    },
+    "license_or_terms": {
+      "type": "string"
+    },
+    "sha256_or_etag": {
+      "type": "string"
+    },
+    "transform_script": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

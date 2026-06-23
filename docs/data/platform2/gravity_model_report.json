@@ -1,0 +1,545 @@
+{
+  "model_id": "ppml_russia_inbound_structural_allocation_v3",
+  "status": "validated_structural_model_not_short_term_point_forecast",
+  "model_role": "explanatory structural allocation and under-representation analysis",
+  "selected_specification": "theory_ex_ante",
+  "formula": "students_observed ~ ln_student_pool + ln_distance + ln_outbound + ln_outbound_missing + tertiary_share + tertiary_share_missing + unga_alignment + unga_alignment_missing + region fixed effects + year fixed effects",
+  "estimator": "Poisson pseudo-maximum likelihood with origin-clustered sandwich covariance",
+  "dependent_variable": "students_observed",
+  "dependent_variable_semantics": "enrolled stock of internationally mobile students in Russia",
+  "complete_model_years": [
+    2011,
+    2014,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "latest_complete_observed_year": 2023,
+  "n_observations": 2070,
+  "n_origins": 207,
+  "n_years": 10,
+  "n_positive_flows": 1657,
+  "n_parameters": 25,
+  "candidate_validation": {
+    "core": {
+      "terms": [
+        "ln_student_pool",
+        "ln_distance"
+      ],
+      "validation_estimator": "regularized PoissonRegressor approximation; final inference uses statsmodels PPML",
+      "time_holdout_by_year": [
+        {
+          "year": 2022,
+          "rows": 207,
+          "observed_total": 335147.0,
+          "share_mae_basis_points": 63.609399014514665,
+          "spearman_rank_correlation": 0.5886046252709128,
+          "top20_recall": 0.35,
+          "mae_students": 2131.8499251517546,
+          "rmse_students": 6091.686610551337,
+          "poisson_deviance_per_row": 3963.572795529937
+        },
+        {
+          "year": 2023,
+          "rows": 207,
+          "observed_total": 334347.0,
+          "share_mae_basis_points": 64.9644478021299,
+          "spearman_rank_correlation": 0.5758839698843232,
+          "top20_recall": 0.35,
+          "mae_students": 2172.066822929872,
+          "rmse_students": 6113.923633243349,
+          "poisson_deviance_per_row": 4067.277310584074
+        }
+      ],
+      "time_holdout_average": {
+        "rows": 207.0,
+        "observed_total": 334747.0,
+        "share_mae_basis_points": 64.28692340832228,
+        "spearman_rank_correlation": 0.5822442975776181,
+        "top20_recall": 0.35,
+        "mae_students": 2151.9583740408134,
+        "rmse_students": 6102.805121897343,
+        "poisson_deviance_per_row": 4015.4250530570052
+      },
+      "country_holdout_average": {
+        "rows": 41.4,
+        "observed_total": 52265.82,
+        "share_mae_basis_points": 346.20162068896616,
+        "spearman_rank_correlation": 0.6176525983419432,
+        "top20_recall": 0.6920000000000001,
+        "mae_students": 1742.8492414171635,
+        "rmse_students": 4608.752649463029,
+        "poisson_deviance_per_row": 3596.3084808614926,
+        "fold": 2.0
+      },
+      "selection_score": 450.4936993013104
+    },
+    "mobility": {
+      "terms": [
+        "ln_student_pool",
+        "ln_distance",
+        "ln_outbound",
+        "ln_outbound_missing"
+      ],
+      "validation_estimator": "regularized PoissonRegressor approximation; final inference uses statsmodels PPML",
+      "time_holdout_by_year": [
+        {
+          "year": 2022,
+          "rows": 207,
+          "observed_total": 335147.0,
+          "share_mae_basis_points": 45.14725174989914,
+          "spearman_rank_correlation": 0.632426302032087,
+          "top20_recall": 0.5,
+          "mae_students": 1513.096598222345,
+          "rmse_students": 4583.786834804527,
+          "poisson_deviance_per_row": 2542.3830877118125
+        },
+        {
+          "year": 2023,
+          "rows": 207,
+          "observed_total": 334347.0,
+          "share_mae_basis_points": 44.89510937584891,
+          "spearman_rank_correlation": 0.6298179728033702,
+          "top20_recall": 0.5,
+          "mae_students": 1501.0545134486958,
+          "rmse_students": 4501.776115330341,
+          "poisson_deviance_per_row": 2491.5531681801535
+        }
+      ],
+      "time_holdout_average": {
+        "rows": 207.0,
+        "observed_total": 334747.0,
+        "share_mae_basis_points": 45.02118056287402,
+        "spearman_rank_correlation": 0.6311221374177286,
+        "top20_recall": 0.5,
+        "mae_students": 1507.0755558355204,
+        "rmse_students": 4542.781475067433,
+        "poisson_deviance_per_row": 2516.968127945983
+      },
+      "country_holdout_average": {
+        "rows": 41.4,
+        "observed_total": 52265.82,
+        "share_mae_basis_points": 245.86523913282974,
+        "spearman_rank_correlation": 0.6304414261181254,
+        "top20_recall": 0.7170000000000002,
+        "mae_students": 1272.9561018081104,
+        "rmse_students": 3501.406765697676,
+        "poisson_deviance_per_row": 2274.5884842119212,
+        "fold": 2.0
+      },
+      "selection_score": 327.8082415189111
+    },
+    "theory_ex_ante": {
+      "terms": [
+        "ln_student_pool",
+        "ln_distance",
+        "ln_outbound",
+        "ln_outbound_missing",
+        "tertiary_share",
+        "tertiary_share_missing",
+        "unga_alignment",
+        "unga_alignment_missing"
+      ],
+      "validation_estimator": "regularized PoissonRegressor approximation; final inference uses statsmodels PPML",
+      "time_holdout_by_year": [
+        {
+          "year": 2022,
+          "rows": 207,
+          "observed_total": 335147.0,
+          "share_mae_basis_points": 35.366229778660795,
+          "spearman_rank_correlation": 0.662756358630355,
+          "top20_recall": 0.65,
+          "mae_students": 1185.2885811628828,
+          "rmse_students": 3806.3815752038986,
+          "poisson_deviance_per_row": 1616.4461965478595
+        },
+        {
+          "year": 2023,
+          "rows": 207,
+          "observed_total": 334347.0,
+          "share_mae_basis_points": 36.01813800237646,
+          "spearman_rank_correlation": 0.6715042309541633,
+          "top20_recall": 0.65,
+          "mae_students": 1204.2556386680562,
+          "rmse_students": 4092.7616459564283,
+          "poisson_deviance_per_row": 1512.6600271212455
+        }
+      ],
+      "time_holdout_average": {
+        "rows": 207.0,
+        "observed_total": 334747.0,
+        "share_mae_basis_points": 35.69218389051863,
+        "spearman_rank_correlation": 0.6671302947922592,
+        "top20_recall": 0.65,
+        "mae_students": 1194.7721099154696,
+        "rmse_students": 3949.5716105801635,
+        "poisson_deviance_per_row": 1564.5531118345525
+      },
+      "country_holdout_average": {
+        "rows": 41.4,
+        "observed_total": 52265.82,
+        "share_mae_basis_points": 226.08951526970716,
+        "spearman_rank_correlation": 0.6510458749072393,
+        "top20_recall": 0.7030000000000001,
+        "mae_students": 1225.02012307375,
+        "rmse_students": 3695.780018027967,
+        "poisson_deviance_per_row": 2009.8507774955226,
+        "fold": 2.0
+      },
+      "selection_score": 295.87289067525086
+    }
+  },
+  "selected_time_holdout_average": {
+    "rows": 207.0,
+    "observed_total": 334747.0,
+    "share_mae_basis_points": 35.69218389051863,
+    "spearman_rank_correlation": 0.6671302947922592,
+    "top20_recall": 0.65,
+    "mae_students": 1194.7721099154696,
+    "rmse_students": 3949.5716105801635,
+    "poisson_deviance_per_row": 1564.5531118345525
+  },
+  "selected_country_holdout_average": {
+    "rows": 41.4,
+    "observed_total": 52265.82,
+    "share_mae_basis_points": 226.08951526970716,
+    "spearman_rank_correlation": 0.6510458749072393,
+    "top20_recall": 0.7030000000000001,
+    "mae_students": 1225.02012307375,
+    "rmse_students": 3695.780018027967,
+    "poisson_deviance_per_row": 2009.8507774955226,
+    "fold": 2.0
+  },
+  "persistence_benchmark": {
+    "name": "recent_observed_share_2019_2021",
+    "purpose": "short-horizon predictive benchmark; not used to construct structural potential",
+    "time_holdout_by_year": [
+      {
+        "year": 2022,
+        "rows": 207,
+        "observed_total": 335147.0,
+        "share_mae_basis_points": 11.732777032660382,
+        "spearman_rank_correlation": 0.9716468070094069,
+        "top20_recall": 0.95,
+        "mae_students": 393.2205024165029,
+        "rmse_students": 1704.8173346420833,
+        "poisson_deviance_per_row": 138.42890488656698
+      },
+      {
+        "year": 2023,
+        "rows": 207,
+        "observed_total": 334347.0,
+        "share_mae_basis_points": 13.600172478917562,
+        "spearman_rank_correlation": 0.9610793168434558,
+        "top20_recall": 0.95,
+        "mae_students": 454.71768678086494,
+        "rmse_students": 2146.424356727633,
+        "poisson_deviance_per_row": 224.8649113889032
+      }
+    ],
+    "time_holdout_average": {
+      "rows": 207.0,
+      "observed_total": 334747.0,
+      "share_mae_basis_points": 12.666474755788972,
+      "spearman_rank_correlation": 0.9663630619264314,
+      "top20_recall": 0.95,
+      "mae_students": 423.9690945986839,
+      "rmse_students": 1925.620845684858,
+      "poisson_deviance_per_row": 181.6469081377351
+    }
+  },
+  "predictive_benchmark_outperforms_structural_model": true,
+  "in_sample_allocation_metrics": {
+    "rows": 207.0,
+    "observed_total": 261329.1,
+    "share_mae_basis_points": 38.99673278465518,
+    "spearman_rank_correlation": 0.6942882272227714,
+    "top20_recall": 0.6050000000000001,
+    "mae_students": 997.8217987009133,
+    "rmse_students": 3914.641417138857,
+    "poisson_deviance_per_row": 1442.8113715664854
+  },
+  "coefficients": [
+    {
+      "term": "const",
+      "estimate": 3.4614526521615243,
+      "std_error": 0.6571615356068005,
+      "p_value": 1.384612712055853e-07,
+      "conf_low": 2.173439710347159,
+      "conf_high": 4.74946559397589,
+      "transform": "intercept"
+    },
+    {
+      "term": "ln_student_pool",
+      "estimate": 2.189933982744674,
+      "std_error": 0.37616509436335716,
+      "p_value": 5.8239390662895604e-09,
+      "conf_low": 1.4526639455513832,
+      "conf_high": 2.9272040199379648,
+      "transform": "ln(UN WPP student_pool)"
+    },
+    {
+      "term": "ln_distance",
+      "estimate": -0.19621613110032285,
+      "std_error": 0.4915499003010833,
+      "p_value": 0.6897617151179118,
+      "conf_low": -1.1596362322947005,
+      "conf_high": 0.7672039700940547,
+      "transform": "ln(great-circle distance to Moscow, km)"
+    },
+    {
+      "term": "ln_outbound",
+      "estimate": 0.8111611990932753,
+      "std_error": 0.229801131020476,
+      "p_value": 0.0004158112206012051,
+      "conf_low": 0.36075925868657216,
+      "conf_high": 1.2615631394999784,
+      "transform": "ln(1 + UNESCO UIS outbound mobility ratio)"
+    },
+    {
+      "term": "ln_outbound_missing",
+      "estimate": -1.4719115297109573,
+      "std_error": 0.5707592771160953,
+      "p_value": 0.009912531259426274,
+      "conf_low": -2.5905791567006204,
+      "conf_high": -0.35324390272129413,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "tertiary_share",
+      "estimate": 0.20552617624800493,
+      "std_error": 0.287352485404942,
+      "p_value": 0.4744603594647414,
+      "conf_low": -0.3576743460137529,
+      "conf_high": 0.7687266985097628,
+      "transform": "UNESCO/World Bank tertiary gross enrolment percent / 100"
+    },
+    {
+      "term": "tertiary_share_missing",
+      "estimate": 1.5352127009963454,
+      "std_error": 0.6159499055348859,
+      "p_value": 0.012687194289377916,
+      "conf_low": 0.3279730698671206,
+      "conf_high": 2.7424523321255703,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "unga_alignment",
+      "estimate": 0.9311652957269587,
+      "std_error": 0.25509970773994217,
+      "p_value": 0.0002620348275144429,
+      "conf_low": 0.4311790560899784,
+      "conf_high": 1.431151535363939,
+      "transform": "recency- and controversy-weighted UNGA vote agreement with Russia, 5-year trailing window"
+    },
+    {
+      "term": "unga_alignment_missing",
+      "estimate": -0.020409275899455046,
+      "std_error": 0.5608728041311648,
+      "p_value": 0.9709726465204402,
+      "conf_low": -1.119699771904526,
+      "conf_high": 1.0788812201056162,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "region_Europe & Central Asia",
+      "estimate": 2.645697705574786,
+      "std_error": 1.0436581487981749,
+      "p_value": 0.011243985280387005,
+      "conf_low": 0.6001653217586185,
+      "conf_high": 4.691230089390953,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "region_Latin America & Caribbean",
+      "estimate": -0.5510014715041713,
+      "std_error": 0.6108417269364412,
+      "p_value": 0.36703753264425953,
+      "conf_low": -1.7482292565538464,
+      "conf_high": 0.6462263135455037,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "region_Middle East & North Africa",
+      "estimate": 0.458131294764091,
+      "std_error": 0.8004218091576921,
+      "p_value": 0.567076528138778,
+      "conf_low": -1.110666623625378,
+      "conf_high": 2.0269292131535597,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "region_North America",
+      "estimate": -0.20047175986825946,
+      "std_error": 0.9484542594950971,
+      "p_value": 0.8326010463677842,
+      "conf_low": -2.059407949462256,
+      "conf_high": 1.6584644297257374,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "region_South Asia",
+      "estimate": -0.15762705279411682,
+      "std_error": 0.5189424808864257,
+      "p_value": 0.7613208958698043,
+      "conf_low": -1.1747356253793766,
+      "conf_high": 0.859481519791143,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "region_Sub-Saharan Africa",
+      "estimate": -0.7002433721335835,
+      "std_error": 0.5880525772961932,
+      "p_value": 0.233738543928241,
+      "conf_low": -1.8528052446500785,
+      "conf_high": 0.45231850038291155,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "region_Unknown",
+      "estimate": -3.0735226532068967,
+      "std_error": 1.6361463378769014,
+      "p_value": 0.06031097962013755,
+      "conf_low": -6.280310548882726,
+      "conf_high": 0.13326524246893268,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "year_2014",
+      "estimate": 0.30479922992297204,
+      "std_error": 0.1786663220456843,
+      "p_value": 0.08801382736384873,
+      "conf_low": -0.04538032653680385,
+      "conf_high": 0.6549787863827479,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "year_2016",
+      "estimate": 0.6752191398000037,
+      "std_error": 0.26877699469708216,
+      "p_value": 0.011998413896328363,
+      "conf_low": 0.14842591032080954,
+      "conf_high": 1.2020123692791977,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "year_2017",
+      "estimate": 0.7153676980678686,
+      "std_error": 0.3241388315330014,
+      "p_value": 0.027315504132616762,
+      "conf_low": 0.08006726227228989,
+      "conf_high": 1.3506681338634472,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "year_2018",
+      "estimate": 0.9199074989439261,
+      "std_error": 0.3196682978209995,
+      "p_value": 0.004005936841628466,
+      "conf_low": 0.2933691482155433,
+      "conf_high": 1.5464458496723088,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "year_2019",
+      "estimate": 0.9289506944755717,
+      "std_error": 0.3211229633170536,
+      "p_value": 0.003818009287741398,
+      "conf_low": 0.29956125176536974,
+      "conf_high": 1.5583401371857737,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "year_2020",
+      "estimate": 1.0909215302026902,
+      "std_error": 0.34160260526958464,
+      "p_value": 0.0014053994238590274,
+      "conf_low": 0.4213927268492519,
+      "conf_high": 1.7604503335561286,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "year_2021",
+      "estimate": 1.0371692463663036,
+      "std_error": 0.35050453015847466,
+      "p_value": 0.0030856384059183913,
+      "conf_low": 0.35019299083756006,
+      "conf_high": 1.7241455018950471,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "year_2022",
+      "estimate": 1.1548535231366326,
+      "std_error": 0.36430972627574,
+      "p_value": 0.0015245090367066033,
+      "conf_low": 0.44081958041853686,
+      "conf_high": 1.8688874658547283,
+      "transform": "fixed effect or missingness indicator"
+    },
+    {
+      "term": "year_2023",
+      "estimate": 1.1807661068852626,
+      "std_error": 0.3971202871863202,
+      "p_value": 0.002945961384340073,
+      "conf_low": 0.40242464646987197,
+      "conf_high": 1.9591075673006533,
+      "transform": "fixed effect or missingness indicator"
+    }
+  ],
+  "diagnostics": {
+    "converged": true,
+    "year_effects": "included in estimation; omitted from future structural-share prediction and replaced by an explicit aggregate capacity path",
+    "future_covariate_policy": "UN WPP student pool varies through 2050; distance is invariant; outbound mobility, tertiary enrolment and UNGA alignment are frozen at their latest observed values",
+    "missingness_policy": "country-specific forward fill; outbound mobility, tertiary enrolment and governance/access indicators are lagged one year; remaining missing values receive the training median and a missingness indicator",
+    "time_holdout_interpretation": "predictions are calibrated to each holdout year's observed total so metrics evaluate origin allocation, not an unknowable destination-year intercept",
+    "benchmark_policy": "recent observed shares are reported as a predictive benchmark but excluded from structural-potential construction to prevent outcome circularity",
+    "excluded_years": "years with fewer than 150 Russia-origin rows or no positive observations are excluded from estimation"
+  },
+  "source_keys": [
+    "unesco_uis_opri_202602",
+    "un_wpp2024_population_by_single_age_sex",
+    "unesco_uis_outbound_mobility",
+    "world_bank_tertiary_enrollment",
+    "un_digital_library_voting_2026_02_06",
+    "natural_earth_admin0_label_points"
+  ],
+  "software": "Python statsmodels GLM + origin-clustered covariance",
+  "training_period": [
+    2011,
+    2021
+  ],
+  "validation_period": [
+    2022,
+    2023
+  ],
+  "full_fit_period": [
+    2011,
+    2023
+  ],
+  "latest_rankable_observed_year": 2023,
+  "fit_metrics": {
+    "mae": 997.8217987009133,
+    "rmse": 3914.641417138857
+  },
+  "validation_metrics": {
+    "mae": 1194.7721099154696,
+    "rmse": 3949.5716105801635,
+    "share_mae_basis_points": 35.69218389051863,
+    "spearman_rank_correlation": 0.6671302947922592,
+    "top20_recall": 0.65
+  },
+  "generated_at": "2026-06-20T06:53:39+00:00",
+  "forecast_uncertainty": {
+    "method": "multivariate-normal coefficient simulation propagated through constrained destination shares and the fixed annual Russia total",
+    "parameter_draws": 600,
+    "interval_level": 0.95,
+    "forecast_interval_point_coverage": 1.0,
+    "gap_probability_semantics": "share of coefficient draws in which structural capacity exceeds demographic-continuity potential",
+    "rank_uncertainty_semantics": "conditional rank among non-excluded countries with a positive simulated gap"
+  }
+}

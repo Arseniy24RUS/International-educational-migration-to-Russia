@@ -1,0 +1,29 @@
+version: trudvsem_program_taxonomy_v2
+source: https://opendata.trudvsem.ru/api/v1/vacancies
+principles:
+  - Search counts overlap and must never be summed as unique vacancies.
+  - Production classification uses vacancy id deduplication and all matched queries.
+  - Explicit API skills have precedence over text-derived competencies.
+  - Public outputs exclude contacts, personal names, phone, email, INN, KPP, OGRN and street addresses.
+program_groups:
+  digital_analytics:
+    label_ru: Цифровая аналитика и Data/AI
+    queries: [SQL, Python, аналитик данных, бизнес-аналитик, BI, машинное обучение]
+    include_regex: '(?i)(аналитик|data|sql|python|bi|машинн|искусственн.*интеллект)'
+    exclude_regex: '(?i)(врач.*аналитик)'
+  international_economics:
+    label_ru: Международная экономика и ВЭД
+    queries: [международная экономика, ВЭД, внешнеэкономическая деятельность, международная торговля, экспорт, импорт]
+    include_regex: '(?i)(международн.*эконом|вэд|внешнеэконом|экспорт|импорт|международн.*торгов)'
+  management_public:
+    label_ru: Управление и государственная политика
+    queries: [управление проектами, проектный менеджер, государственное управление, цифровая трансформация, управление изменениями]
+    include_regex: '(?i)(управлен|проектн|государственн|цифров.*трансформац|изменени)'
+  languages_regional:
+    label_ru: Иностранные языки и регионоведение
+    queries: [английский язык, китайский язык, арабский язык, переводчик, международные коммуникации]
+    include_regex: '(?i)(английск|китайск|арабск|переводчик|международн.*коммуникац)'
+  legal_public:
+    label_ru: Международное право и комплаенс
+    queries: [международное право, юрист ВЭД, комплаенс, санкционный комплаенс, персональные данные]
+    include_regex: '(?i)(международн.*прав|юрист.*вэд|комплаенс|санкцион|персональн.*данн)'

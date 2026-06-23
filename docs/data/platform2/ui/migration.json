@@ -1,0 +1,669 @@
+{
+  "schema_version": "world-class-ui-mart-v1",
+  "asset_version": "20260622-world-class-ui1",
+  "route": "migration",
+  "task": "5.2.2",
+  "generated_at_utc": "2026-06-22T00:00:00Z",
+  "title": {
+    "ru": "Навигатор наблюдаемого въезда",
+    "en": "Observed inbound navigator"
+  },
+  "management_question": {
+    "ru": "Какие страны формируют наблюдаемый контингент студентов в России?",
+    "en": "Which countries form the observed student stock in Russia?"
+  },
+  "input_artifacts": [
+    {
+      "path": "docs/data/platform2/russia_inbound_students_by_origin_2010_2025.csv",
+      "bytes": 1240655,
+      "sha256": "a60f0c0f2c892d417a1eda3f9642738e620775c3d1c9e994c871fd8fa91f2822"
+    },
+    {
+      "path": "docs/data/mgimo_platform2_payload.json",
+      "bytes": 5122712,
+      "sha256": "a18a05b6a24a594f2e1284daf37b8f70cd16dc6bb1e54b1c9f55df7fc9aac2b7"
+    }
+  ],
+  "headline_metrics": [
+    {
+      "label": {
+        "ru": "Последний содержательный год",
+        "en": "Latest meaningful year"
+      },
+      "value": 2023,
+      "unit": {
+        "ru": "год",
+        "en": "year"
+      },
+      "evidence_class": "observed_official",
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "63483ed78b56eec0"
+      }
+    },
+    {
+      "label": {
+        "ru": "Стран с наблюдениями",
+        "en": "Countries with observations"
+      },
+      "value": 174,
+      "unit": {
+        "ru": "стран происхождения",
+        "en": "origins"
+      },
+      "evidence_class": "observed_official",
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "63483ed78b56eec0"
+      }
+    }
+  ],
+  "focus_rows": [
+    {
+      "id": "63483ed78b56eec0",
+      "label": {
+        "ru": "Казахстан",
+        "en": "Kazakhstan"
+      },
+      "value": "48778.0",
+      "unit": {
+        "ru": "наблюдаемый контингент",
+        "en": "enrolled student stock"
+      },
+      "evidence_class": "observed_official",
+      "detail": {
+        "ru": "Контингент UIS в России, 2023; это запас, не годовой поток.",
+        "en": "UIS stock in Russia, 2023; this is a stock, not annual flow."
+      },
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "63483ed78b56eec0"
+      },
+      "iso3": "KAZ",
+      "iso2": "KZ",
+      "country_bearing": true
+    },
+    {
+      "id": "fc154fa0ac4baf49",
+      "label": {
+        "ru": "Китай",
+        "en": "China"
+      },
+      "value": "46046.0",
+      "unit": {
+        "ru": "наблюдаемый контингент",
+        "en": "enrolled student stock"
+      },
+      "evidence_class": "observed_official",
+      "detail": {
+        "ru": "Контингент UIS в России, 2023; это запас, не годовой поток.",
+        "en": "UIS stock in Russia, 2023; this is a stock, not annual flow."
+      },
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "fc154fa0ac4baf49"
+      },
+      "iso3": "CHN",
+      "iso2": "CN",
+      "country_bearing": true
+    },
+    {
+      "id": "8c2af4dfef6e7d69",
+      "label": {
+        "ru": "Узбекистан",
+        "en": "Uzbekistan"
+      },
+      "value": "42074.0",
+      "unit": {
+        "ru": "наблюдаемый контингент",
+        "en": "enrolled student stock"
+      },
+      "evidence_class": "observed_official",
+      "detail": {
+        "ru": "Контингент UIS в России, 2023; это запас, не годовой поток.",
+        "en": "UIS stock in Russia, 2023; this is a stock, not annual flow."
+      },
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "8c2af4dfef6e7d69"
+      },
+      "iso3": "UZB",
+      "iso2": "UZ",
+      "country_bearing": true
+    },
+    {
+      "id": "35dc4fd1170612ee",
+      "label": {
+        "ru": "Туркменистан",
+        "en": "Turkmenistan"
+      },
+      "value": "35170.0",
+      "unit": {
+        "ru": "наблюдаемый контингент",
+        "en": "enrolled student stock"
+      },
+      "evidence_class": "observed_official",
+      "detail": {
+        "ru": "Контингент UIS в России, 2023; это запас, не годовой поток.",
+        "en": "UIS stock in Russia, 2023; this is a stock, not annual flow."
+      },
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "35dc4fd1170612ee"
+      },
+      "iso3": "TKM",
+      "iso2": "TM",
+      "country_bearing": true
+    },
+    {
+      "id": "4ff82b21f14a58f6",
+      "label": {
+        "ru": "Таджикистан",
+        "en": "Tajikistan"
+      },
+      "value": "27449.0",
+      "unit": {
+        "ru": "наблюдаемый контингент",
+        "en": "enrolled student stock"
+      },
+      "evidence_class": "observed_official",
+      "detail": {
+        "ru": "Контингент UIS в России, 2023; это запас, не годовой поток.",
+        "en": "UIS stock in Russia, 2023; this is a stock, not annual flow."
+      },
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "4ff82b21f14a58f6"
+      },
+      "iso3": "TJK",
+      "iso2": "TJ",
+      "country_bearing": true
+    },
+    {
+      "id": "6a10a72bb854f9f8",
+      "label": {
+        "ru": "Индия",
+        "en": "India"
+      },
+      "value": "24904.0",
+      "unit": {
+        "ru": "наблюдаемый контингент",
+        "en": "enrolled student stock"
+      },
+      "evidence_class": "observed_official",
+      "detail": {
+        "ru": "Контингент UIS в России, 2023; это запас, не годовой поток.",
+        "en": "UIS stock in Russia, 2023; this is a stock, not annual flow."
+      },
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "6a10a72bb854f9f8"
+      },
+      "iso3": "IND",
+      "iso2": "IN",
+      "country_bearing": true
+    },
+    {
+      "id": "ef74dc10df08fe5d",
+      "label": {
+        "ru": "Египет",
+        "en": "Egypt"
+      },
+      "value": "15408.0",
+      "unit": {
+        "ru": "наблюдаемый контингент",
+        "en": "enrolled student stock"
+      },
+      "evidence_class": "observed_official",
+      "detail": {
+        "ru": "Контингент UIS в России, 2023; это запас, не годовой поток.",
+        "en": "UIS stock in Russia, 2023; this is a stock, not annual flow."
+      },
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "ef74dc10df08fe5d"
+      },
+      "iso3": "EGY",
+      "iso2": "EG",
+      "country_bearing": true
+    },
+    {
+      "id": "ed58338924b5b330",
+      "label": {
+        "ru": "Беларусь",
+        "en": "Belarus"
+      },
+      "value": "9369.0",
+      "unit": {
+        "ru": "наблюдаемый контингент",
+        "en": "enrolled student stock"
+      },
+      "evidence_class": "observed_official",
+      "detail": {
+        "ru": "Контингент UIS в России, 2023; это запас, не годовой поток.",
+        "en": "UIS stock in Russia, 2023; this is a stock, not annual flow."
+      },
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "ed58338924b5b330"
+      },
+      "iso3": "BLR",
+      "iso2": "BY",
+      "country_bearing": true
+    },
+    {
+      "id": "1c8273ca8394ab2d",
+      "label": {
+        "ru": "Иран",
+        "en": "Iran, Islamic Republic of"
+      },
+      "value": "8462.0",
+      "unit": {
+        "ru": "наблюдаемый контингент",
+        "en": "enrolled student stock"
+      },
+      "evidence_class": "observed_official",
+      "detail": {
+        "ru": "Контингент UIS в России, 2023; это запас, не годовой поток.",
+        "en": "UIS stock in Russia, 2023; this is a stock, not annual flow."
+      },
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "1c8273ca8394ab2d"
+      },
+      "iso3": "IRN",
+      "iso2": "IR",
+      "country_bearing": true
+    },
+    {
+      "id": "b09bec936924fbc8",
+      "label": {
+        "ru": "Киргизия",
+        "en": "Kyrgyzstan"
+      },
+      "value": "8412.0",
+      "unit": {
+        "ru": "наблюдаемый контингент",
+        "en": "enrolled student stock"
+      },
+      "evidence_class": "observed_official",
+      "detail": {
+        "ru": "Контингент UIS в России, 2023; это запас, не годовой поток.",
+        "en": "UIS stock in Russia, 2023; this is a stock, not annual flow."
+      },
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "b09bec936924fbc8"
+      },
+      "iso3": "KGZ",
+      "iso2": "KG",
+      "country_bearing": true
+    },
+    {
+      "id": "2c42939624a5a0fc",
+      "label": {
+        "ru": "Азербайджан",
+        "en": "Azerbaijan"
+      },
+      "value": "5965.0",
+      "unit": {
+        "ru": "наблюдаемый контингент",
+        "en": "enrolled student stock"
+      },
+      "evidence_class": "observed_official",
+      "detail": {
+        "ru": "Контингент UIS в России, 2023; это запас, не годовой поток.",
+        "en": "UIS stock in Russia, 2023; this is a stock, not annual flow."
+      },
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "2c42939624a5a0fc"
+      },
+      "iso3": "AZE",
+      "iso2": "AZ",
+      "country_bearing": true
+    },
+    {
+      "id": "0103c9796d386102",
+      "label": {
+        "ru": "Украина",
+        "en": "Ukraine"
+      },
+      "value": "5279.0",
+      "unit": {
+        "ru": "наблюдаемый контингент",
+        "en": "enrolled student stock"
+      },
+      "evidence_class": "observed_official",
+      "detail": {
+        "ru": "Контингент UIS в России, 2023; это запас, не годовой поток.",
+        "en": "UIS stock in Russia, 2023; this is a stock, not annual flow."
+      },
+      "source": {
+        "source_key": "unesco_uis_opri_202602",
+        "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+        "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+        "retrieved_at": "2026-06-20T02:46:44+00:00",
+        "source_period": "2023",
+        "unit": "students",
+        "evidence_class": "official_or_reference",
+        "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+        "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+        "trace_id": "0103c9796d386102"
+      },
+      "iso3": "UKR",
+      "iso2": "UA",
+      "country_bearing": true
+    }
+  ],
+  "source_items": [
+    {
+      "source_key": "unesco_uis_opri_202602",
+      "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+      "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+      "retrieved_at": "2026-06-20T02:46:44+00:00",
+      "source_period": "2023",
+      "unit": "students",
+      "evidence_class": "official_or_reference",
+      "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+      "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+      "trace_id": "63483ed78b56eec0"
+    },
+    {
+      "source_key": "unesco_uis_opri_202602",
+      "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+      "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+      "retrieved_at": "2026-06-20T02:46:44+00:00",
+      "source_period": "2023",
+      "unit": "students",
+      "evidence_class": "official_or_reference",
+      "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+      "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+      "trace_id": "fc154fa0ac4baf49"
+    },
+    {
+      "source_key": "unesco_uis_opri_202602",
+      "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+      "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+      "retrieved_at": "2026-06-20T02:46:44+00:00",
+      "source_period": "2023",
+      "unit": "students",
+      "evidence_class": "official_or_reference",
+      "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+      "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+      "trace_id": "8c2af4dfef6e7d69"
+    },
+    {
+      "source_key": "unesco_uis_opri_202602",
+      "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+      "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+      "retrieved_at": "2026-06-20T02:46:44+00:00",
+      "source_period": "2023",
+      "unit": "students",
+      "evidence_class": "official_or_reference",
+      "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+      "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+      "trace_id": "35dc4fd1170612ee"
+    },
+    {
+      "source_key": "unesco_uis_opri_202602",
+      "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+      "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+      "retrieved_at": "2026-06-20T02:46:44+00:00",
+      "source_period": "2023",
+      "unit": "students",
+      "evidence_class": "official_or_reference",
+      "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+      "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+      "trace_id": "4ff82b21f14a58f6"
+    },
+    {
+      "source_key": "unesco_uis_opri_202602",
+      "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+      "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+      "retrieved_at": "2026-06-20T02:46:44+00:00",
+      "source_period": "2023",
+      "unit": "students",
+      "evidence_class": "official_or_reference",
+      "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+      "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+      "trace_id": "6a10a72bb854f9f8"
+    },
+    {
+      "source_key": "unesco_uis_opri_202602",
+      "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+      "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+      "retrieved_at": "2026-06-20T02:46:44+00:00",
+      "source_period": "2023",
+      "unit": "students",
+      "evidence_class": "official_or_reference",
+      "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+      "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+      "trace_id": "ef74dc10df08fe5d"
+    },
+    {
+      "source_key": "unesco_uis_opri_202602",
+      "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+      "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+      "retrieved_at": "2026-06-20T02:46:44+00:00",
+      "source_period": "2023",
+      "unit": "students",
+      "evidence_class": "official_or_reference",
+      "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+      "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+      "trace_id": "ed58338924b5b330"
+    },
+    {
+      "source_key": "unesco_uis_opri_202602",
+      "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+      "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+      "retrieved_at": "2026-06-20T02:46:44+00:00",
+      "source_period": "2023",
+      "unit": "students",
+      "evidence_class": "official_or_reference",
+      "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+      "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+      "trace_id": "1c8273ca8394ab2d"
+    },
+    {
+      "source_key": "unesco_uis_opri_202602",
+      "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+      "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+      "retrieved_at": "2026-06-20T02:46:44+00:00",
+      "source_period": "2023",
+      "unit": "students",
+      "evidence_class": "official_or_reference",
+      "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+      "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+      "trace_id": "b09bec936924fbc8"
+    },
+    {
+      "source_key": "unesco_uis_opri_202602",
+      "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+      "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+      "retrieved_at": "2026-06-20T02:46:44+00:00",
+      "source_period": "2023",
+      "unit": "students",
+      "evidence_class": "official_or_reference",
+      "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+      "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+      "trace_id": "2c42939624a5a0fc"
+    },
+    {
+      "source_key": "unesco_uis_opri_202602",
+      "source_title": "UNESCO UIS OPRI February 2026 bulk archive",
+      "source_url_or_file": "data/raw/uis_opri/OPRI_202602.zip::OPRI_DATA_NATIONAL.csv",
+      "retrieved_at": "2026-06-20T02:46:44+00:00",
+      "source_period": "2023",
+      "unit": "students",
+      "evidence_class": "official_or_reference",
+      "sha256_or_etag": "7e35482e817d63b0cf638fb695f8a9fd2df9139ae830c0d13f2eba4706d50eca",
+      "transform_script": "scripts/build_platform2_artifacts.py::read_uis_opri",
+      "trace_id": "0103c9796d386102"
+    }
+  ],
+  "handoffs": [
+    {
+      "href": "demography.html",
+      "label": {
+        "ru": "Сравнить с рынком 2050",
+        "en": "Compare with 2050 market"
+      }
+    },
+    {
+      "href": "gap.html",
+      "label": {
+        "ru": "Проверить разрыв",
+        "en": "Check structural gap"
+      }
+    }
+  ],
+  "interaction_chips": [
+    {
+      "ru": "год",
+      "en": "year"
+    },
+    {
+      "ru": "страна происхождения",
+      "en": "origin"
+    },
+    {
+      "ru": "строка UIS",
+      "en": "UIS row"
+    }
+  ],
+  "row_counts": {
+    "headline_metrics": 2,
+    "focus_rows": 12,
+    "source_items": 12,
+    "handoffs": 2,
+    "interaction_chips": 3
+  },
+  "field_definitions": {
+    "headline_metrics": {
+      "label": "Bilingual metric label.",
+      "value": "Displayed presentation value derived from listed input artifacts.",
+      "unit": "Human-readable unit; never converts missingness to zero.",
+      "evidence_class": "One of the project evidence classes.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "focus_rows": {
+      "id": "Stable presentation row identifier.",
+      "label": "Bilingual or source-native row label.",
+      "value": "Displayed value for linked selection and export.",
+      "unit": "Value unit.",
+      "evidence_class": "Evidence class for the row value.",
+      "detail": "Bilingual row explanation and semantic guardrail.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "source_items": "Deduplicated source/model provenance items collected from visible metrics and rows.",
+    "handoffs": "Cross-page analytical links that may carry selected context."
+  },
+  "acceptance_notes": [
+    "Observed UIS stock only; not annual enrolment flow."
+  ]
+}

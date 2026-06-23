@@ -1,0 +1,21 @@
+{
+  "name": "international-educational-migration-to-russia",
+  "version": "2026.06.23",
+  "private": false,
+  "description": "Static GitHub Pages research platform on international educational migration to Russia.",
+  "scripts": {
+    "frontend:build": "python scripts/sanitize_public_trudvsem_artifacts.py && python scripts/build_frontend_world_class.py",
+    "frontend:public:build": "npm run frontend:build && python scripts/build_github_pages_release.py",
+    "frontend:public:validate": "python scripts/validate_github_pages_release.py --strict",
+    "frontend:public:qa:chromium": "node scripts/run_github_pages_release_qa.cjs --engine chromium",
+    "frontend:public:qa:webkit": "node scripts/run_github_pages_release_qa.cjs --engine webkit",
+    "frontend:public:qa": "node scripts/preflight_playwright.cjs && node scripts/run_github_pages_release_qa.cjs",
+    "frontend:public:release": "npm run frontend:public:build && npm run frontend:public:validate && npm run frontend:public:qa"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.3",
+    "@playwright/test": "^1.57.0",
+    "flag-icons": "^7.5.0",
+    "http-server": "^14.1.1"
+  }
+}

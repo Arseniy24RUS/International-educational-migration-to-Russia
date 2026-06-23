@@ -1,0 +1,48 @@
+
+/* Executive report cartography and restrained flag decoration, v5.3 */
+.report-cartography-page {
+  position: relative !important; width: 210mm !important; min-height: 297mm !important;
+  box-sizing: border-box !important; padding: 15mm 16mm 14mm !important;
+  break-after: page !important; page-break-after: always !important; overflow: hidden !important;
+  background: #fff !important; color: #172033 !important;
+  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
+}
+.report-cartography-page * { box-sizing: border-box; }
+.report-cartography-kicker { font-size: 8.5pt; letter-spacing: .08em; text-transform: uppercase; color: #65728a; margin-bottom: 4mm; }
+.report-cartography-title { font-size: 22pt; line-height: 1.16; font-weight: 720; margin: 0 0 3mm; color: #15223a; }
+.report-cartography-subtitle { font-size: 10.5pt; line-height: 1.45; color: #58657a; margin: 0 0 5mm; max-width: 170mm; }
+.report-cartography-meta { display:flex; gap:3mm; flex-wrap:wrap; margin:0 0 4mm; }
+.report-cartography-chip { border: .2mm solid #d8deea; border-radius: 10mm; padding: 1.4mm 3mm; font-size: 8pt; color:#42506a; background:#f8fafc; }
+.report-cartography-map-wrap { border:.25mm solid #dbe1ec; border-radius:3mm; padding:3mm; background:#fbfcfe; }
+.report-cartography-map { display:block; width:100%; height:auto; }
+.report-cartography-map path.country { stroke:#fff; stroke-width:.55; vector-effect:non-scaling-stroke; }
+.report-cartography-legend { display:flex; align-items:center; gap:1.4mm; margin-top:3mm; font-size:7.5pt; color:#536078; flex-wrap:wrap; }
+.report-cartography-swatch { width:10mm; height:3.5mm; border:.15mm solid rgba(21,34,58,.18); }
+.report-cartography-bottom { display:grid; grid-template-columns: 1.5fr .9fr; gap:5mm; margin-top:5mm; }
+.report-cartography-note { border-left:1.2mm solid #667aa5; background:#f5f7fb; padding:3.2mm 4mm; font-size:9pt; line-height:1.45; }
+.report-cartography-ranking { border:.2mm solid #dbe1ec; border-radius:2.5mm; padding:3mm 3.5mm; }
+.report-cartography-ranking h4 { font-size:9pt; margin:0 0 2mm; color:#35435c; }
+.report-cartography-rank-row { display:flex; align-items:center; gap:2mm; font-size:8.2pt; line-height:1.25; padding:1.2mm 0; border-bottom:.15mm solid #edf0f5; }
+.report-cartography-rank-row:last-child { border-bottom:0; }
+.report-cartography-rank-no { width:5mm; color:#7a879c; font-variant-numeric:tabular-nums; }
+.report-cartography-rank-name { flex:1; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.report-cartography-rank-value { font-weight:650; font-variant-numeric:tabular-nums; }
+.report-country-flag, .report-cartography-flag { width:6.2mm; height:4.1mm; object-fit:cover; border:.15mm solid rgba(20,30,50,.22); border-radius:.45mm; box-shadow:0 .2mm .5mm rgba(20,30,50,.12); flex:0 0 auto; vertical-align:middle; }
+.report-country-heading-with-flag { display:flex !important; align-items:center !important; gap:3mm !important; }
+.report-ranking-flag { width:4.6mm; height:3.05mm; margin-right:1.5mm; }
+.report-cartography-source { position:absolute; left:16mm; right:16mm; bottom:9mm; font-size:7pt; line-height:1.35; color:#68758a; border-top:.2mm solid #dbe1ec; padding-top:2mm; }
+.report-cartography-page-no { position:absolute; right:16mm; bottom:4mm; font-size:7.5pt; color:#7a879c; }
+.report-cartography-chapter { display:flex !important; flex-direction:column; justify-content:center; }
+.report-cartography-chapter .report-cartography-title { font-size:31pt; max-width:165mm; }
+.report-cartography-method-grid { display:grid; grid-template-columns:1fr 1fr; gap:4mm; margin-top:5mm; }
+.report-cartography-method-card { border:.2mm solid #dbe1ec; border-radius:2.5mm; padding:4mm; min-height:42mm; }
+.report-cartography-method-card h3 { margin:0 0 2mm; font-size:11pt; }
+.report-cartography-method-card p, .report-cartography-method-card li { font-size:8.8pt; line-height:1.45; }
+.report-cartography-formula { font-family:"DejaVu Sans", Cambria, serif; font-size:12pt; background:#f5f7fb; padding:3mm; border-radius:2mm; text-align:center; }
+@media screen {
+  .report-cartography-page { margin: 8mm auto !important; box-shadow:0 2mm 8mm rgba(24,35,55,.16); }
+}
+@media print {
+  .report-cartography-page { margin:0 !important; box-shadow:none !important; }
+  .report-country-flag, .report-cartography-flag { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+}

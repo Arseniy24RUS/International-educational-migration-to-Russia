@@ -1,0 +1,535 @@
+{
+  "schema_version": "world-class-ui-mart-v1",
+  "asset_version": "20260622-world-class-ui1",
+  "route": "matrix",
+  "task": "5.2.9",
+  "generated_at_utc": "2026-06-22T00:00:00Z",
+  "title": {
+    "ru": "Матрица управленческих гипотез",
+    "en": "Management-hypothesis matrix"
+  },
+  "management_question": {
+    "ru": "Какие страна-программа-инструмент комбинации стоит проверять пилотом?",
+    "en": "Which country-program-instrument combinations should be piloted?"
+  },
+  "input_artifacts": [
+    {
+      "path": "docs/data/platform2/country_program_priority_v5.csv",
+      "bytes": 858096,
+      "sha256": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e"
+    }
+  ],
+  "headline_metrics": [
+    {
+      "label": {
+        "ru": "Комбинаций",
+        "en": "Combinations"
+      },
+      "value": 300,
+      "unit": {
+        "ru": "строк страна-программа",
+        "en": "country-program rows"
+      },
+      "evidence_class": "model_estimate",
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      }
+    },
+    {
+      "label": {
+        "ru": "Эффект до пилота",
+        "en": "Effect identification"
+      },
+      "value": {
+        "ru": "не оценён ex ante",
+        "en": "ex ante blocked"
+      },
+      "unit": {
+        "ru": "политика оценки",
+        "en": "policy"
+      },
+      "evidence_class": "missing_not_applicable",
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      }
+    }
+  ],
+  "focus_rows": [
+    {
+      "id": "ARE-digital_analytics",
+      "label": {
+        "ru": "Объединённые Арабские Эмираты · Цифровая аналитика и Data/AI",
+        "en": "United Arab Emirates · Digital analytics and Data/AI"
+      },
+      "value": "78.66940063619947",
+      "unit": {
+        "ru": "индекс приоритета",
+        "en": "management index"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "пилот с целевой проверкой; кампания с работодателями и кейс-чемпионатами; эффект до пилота не установлен.",
+        "en": "B_targeted_validation; employer_linked_program_campaign_and_case_competitions; effect not identified ex ante."
+      },
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      },
+      "iso3": "ARE",
+      "iso2": "AE",
+      "country_bearing": true
+    },
+    {
+      "id": "BLR-digital_analytics",
+      "label": {
+        "ru": "Беларусь · Цифровая аналитика и Data/AI",
+        "en": "Belarus · Digital analytics and Data/AI"
+      },
+      "value": "78.29881591092027",
+      "unit": {
+        "ru": "индекс приоритета",
+        "en": "management index"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "пилот с целевой проверкой; русскоязычный трек, выпускники и школьные сети; эффект до пилота не установлен.",
+        "en": "B_targeted_validation; russian_language_track_alumni_and_school_network; effect not identified ex ante."
+      },
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      },
+      "iso3": "BLR",
+      "iso2": "BY",
+      "country_bearing": true
+    },
+    {
+      "id": "SRB-digital_analytics",
+      "label": {
+        "ru": "Сербия · Цифровая аналитика и Data/AI",
+        "en": "Serbia · Digital analytics and Data/AI"
+      },
+      "value": "78.125645603048",
+      "unit": {
+        "ru": "индекс приоритета",
+        "en": "management index"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "пилот с целевой проверкой; кампания с работодателями и кейс-чемпионатами; эффект до пилота не установлен.",
+        "en": "B_targeted_validation; employer_linked_program_campaign_and_case_competitions; effect not identified ex ante."
+      },
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      },
+      "iso3": "SRB",
+      "iso2": "RS",
+      "country_bearing": true
+    },
+    {
+      "id": "SAU-digital_analytics",
+      "label": {
+        "ru": "Саудовская Аравия · Цифровая аналитика и Data/AI",
+        "en": "Saudi Arabia · Digital analytics and Data/AI"
+      },
+      "value": "76.62116573923996",
+      "unit": {
+        "ru": "индекс приоритета",
+        "en": "management index"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "пилот с целевой проверкой; кампания с работодателями и кейс-чемпионатами; эффект до пилота не установлен.",
+        "en": "B_targeted_validation; employer_linked_program_campaign_and_case_competitions; effect not identified ex ante."
+      },
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      },
+      "iso3": "SAU",
+      "iso2": "SA",
+      "country_bearing": true
+    },
+    {
+      "id": "TUR-digital_analytics",
+      "label": {
+        "ru": "Турция · Цифровая аналитика и Data/AI",
+        "en": "Türkiye · Digital analytics and Data/AI"
+      },
+      "value": "76.48347846132606",
+      "unit": {
+        "ru": "индекс приоритета",
+        "en": "management index"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "пилот с целевой проверкой; кампания с работодателями и кейс-чемпионатами; эффект до пилота не установлен.",
+        "en": "B_targeted_validation; employer_linked_program_campaign_and_case_competitions; effect not identified ex ante."
+      },
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      },
+      "iso3": "TUR",
+      "iso2": "TR",
+      "country_bearing": true
+    },
+    {
+      "id": "AZE-digital_analytics",
+      "label": {
+        "ru": "Азербайджан · Цифровая аналитика и Data/AI",
+        "en": "Azerbaijan · Digital analytics and Data/AI"
+      },
+      "value": "75.4646327987115",
+      "unit": {
+        "ru": "индекс приоритета",
+        "en": "management index"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "пилот с целевой проверкой; кампания с работодателями и кейс-чемпионатами; эффект до пилота не установлен.",
+        "en": "B_targeted_validation; employer_linked_program_campaign_and_case_competitions; effect not identified ex ante."
+      },
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      },
+      "iso3": "AZE",
+      "iso2": "AZ",
+      "country_bearing": true
+    },
+    {
+      "id": "ARE-international_economics",
+      "label": {
+        "ru": "Объединённые Арабские Эмираты · Международная экономика и ВЭД",
+        "en": "United Arab Emirates · International economics and foreign trade"
+      },
+      "value": "74.66191194310707",
+      "unit": {
+        "ru": "индекс приоритета",
+        "en": "management index"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "пилот с целевой проверкой; целевая цифровая кампания с проверкой через местного партнёра; эффект до пилота не установлен.",
+        "en": "B_targeted_validation; targeted_digital_campaign_with_local_partner_validation; effect not identified ex ante."
+      },
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      },
+      "iso3": "ARE",
+      "iso2": "AE",
+      "country_bearing": true
+    },
+    {
+      "id": "OMN-digital_analytics",
+      "label": {
+        "ru": "Оман · Цифровая аналитика и Data/AI",
+        "en": "Oman · Digital analytics and Data/AI"
+      },
+      "value": "74.29973250288546",
+      "unit": {
+        "ru": "индекс приоритета",
+        "en": "management index"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "пилот с целевой проверкой; кампания с работодателями и кейс-чемпионатами; эффект до пилота не установлен.",
+        "en": "B_targeted_validation; employer_linked_program_campaign_and_case_competitions; effect not identified ex ante."
+      },
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      },
+      "iso3": "OMN",
+      "iso2": "OM",
+      "country_bearing": true
+    },
+    {
+      "id": "DJI-digital_analytics",
+      "label": {
+        "ru": "Джибути · Цифровая аналитика и Data/AI",
+        "en": "Djibouti · Digital analytics and Data/AI"
+      },
+      "value": "73.57402683095387",
+      "unit": {
+        "ru": "индекс приоритета",
+        "en": "management index"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "пилот с целевой проверкой; кампания с работодателями и кейс-чемпионатами; эффект до пилота не установлен.",
+        "en": "B_targeted_validation; employer_linked_program_campaign_and_case_competitions; effect not identified ex ante."
+      },
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      },
+      "iso3": "DJI",
+      "iso2": "DJ",
+      "country_bearing": true
+    },
+    {
+      "id": "KWT-digital_analytics",
+      "label": {
+        "ru": "Кувейт · Цифровая аналитика и Data/AI",
+        "en": "Kuwait · Digital analytics and Data/AI"
+      },
+      "value": "73.56197885928239",
+      "unit": {
+        "ru": "индекс приоритета",
+        "en": "management index"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "пилот с целевой проверкой; кампания с работодателями и кейс-чемпионатами; эффект до пилота не установлен.",
+        "en": "B_targeted_validation; employer_linked_program_campaign_and_case_competitions; effect not identified ex ante."
+      },
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      },
+      "iso3": "KWT",
+      "iso2": "KW",
+      "country_bearing": true
+    },
+    {
+      "id": "PHL-digital_analytics",
+      "label": {
+        "ru": "Филиппины · Цифровая аналитика и Data/AI",
+        "en": "Philippines · Digital analytics and Data/AI"
+      },
+      "value": "72.75231826028718",
+      "unit": {
+        "ru": "индекс приоритета",
+        "en": "management index"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "пилот с целевой проверкой; кампания с работодателями и кейс-чемпионатами; эффект до пилота не установлен.",
+        "en": "B_targeted_validation; employer_linked_program_campaign_and_case_competitions; effect not identified ex ante."
+      },
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      },
+      "iso3": "PHL",
+      "iso2": "PH",
+      "country_bearing": true
+    },
+    {
+      "id": "BIH-digital_analytics",
+      "label": {
+        "ru": "Босния и Герцеговина · Цифровая аналитика и Data/AI",
+        "en": "Bosnia and Herzegovina · Digital analytics and Data/AI"
+      },
+      "value": "72.49388859780021",
+      "unit": {
+        "ru": "индекс приоритета",
+        "en": "management index"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "пилот с целевой проверкой; кампания с работодателями и кейс-чемпионатами; эффект до пилота не установлен.",
+        "en": "B_targeted_validation; employer_linked_program_campaign_and_case_competitions; effect not identified ex ante."
+      },
+      "source": {
+        "source_key": "country_program_priority_v5",
+        "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+        "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2023",
+        "unit": "management priority index",
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+      },
+      "iso3": "BIH",
+      "iso2": "BA",
+      "country_bearing": true
+    }
+  ],
+  "source_items": [
+    {
+      "source_key": "country_program_priority_v5",
+      "source_title": "Country-program priority matrix v5: ex ante country-program-instrument management hypotheses",
+      "source_url_or_file": "docs/data/platform2/country_program_priority_v5.csv",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2023",
+      "unit": "management priority index",
+      "evidence_class": "model_estimate",
+      "sha256_or_etag": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e",
+      "transform_script": "scripts/build_model_upgrades_v3.py",
+      "trace_id": "ppml_russia_inbound_structural_allocation_v3;friendliness_receptivity_ex_ante_v4;trudvsem_program_demand_v5;mgimo_program_profiles"
+    }
+  ],
+  "handoffs": [
+    {
+      "href": "report.html",
+      "label": {
+        "ru": "Вынести в доклад",
+        "en": "Add to report"
+      }
+    },
+    {
+      "href": "vacancies.html",
+      "label": {
+        "ru": "Проверить трудовой сигнал",
+        "en": "Check labor signal"
+      }
+    }
+  ],
+  "interaction_chips": [
+    {
+      "ru": "страна",
+      "en": "country"
+    },
+    {
+      "ru": "программа",
+      "en": "program"
+    },
+    {
+      "ru": "пилот",
+      "en": "pilot"
+    }
+  ],
+  "row_counts": {
+    "headline_metrics": 2,
+    "focus_rows": 12,
+    "source_items": 1,
+    "handoffs": 2,
+    "interaction_chips": 3
+  },
+  "field_definitions": {
+    "headline_metrics": {
+      "label": "Bilingual metric label.",
+      "value": "Displayed presentation value derived from listed input artifacts.",
+      "unit": "Human-readable unit; never converts missingness to zero.",
+      "evidence_class": "One of the project evidence classes.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "focus_rows": {
+      "id": "Stable presentation row identifier.",
+      "label": "Bilingual or source-native row label.",
+      "value": "Displayed value for linked selection and export.",
+      "unit": "Value unit.",
+      "evidence_class": "Evidence class for the row value.",
+      "detail": "Bilingual row explanation and semantic guardrail.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "source_items": "Deduplicated source/model provenance items collected from visible metrics and rows.",
+    "handoffs": "Cross-page analytical links that may carry selected context."
+  },
+  "acceptance_notes": [
+    "Expected effect value remains not identified ex ante."
+  ]
+}

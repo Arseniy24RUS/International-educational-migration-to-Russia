@@ -1,0 +1,580 @@
+{
+  "schema_version": "world-class-ui-mart-v1",
+  "asset_version": "20260622-world-class-ui1",
+  "route": "model",
+  "task": "5.2.4",
+  "generated_at_utc": "2026-06-22T00:00:00Z",
+  "title": {
+    "ru": "Карточка и диагностика PPML",
+    "en": "PPML model card and diagnostics"
+  },
+  "management_question": {
+    "ru": "Что объясняет структурная PPML-модель и где её пределы?",
+    "en": "What does the structural PPML model explain and where are its limits?"
+  },
+  "input_artifacts": [
+    {
+      "path": "docs/data/platform2/gravity_model_report.json",
+      "bytes": 20059,
+      "sha256": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959"
+    }
+  ],
+  "headline_metrics": [
+    {
+      "label": {
+        "ru": "Наблюдений модели",
+        "en": "Model observations"
+      },
+      "value": 2070,
+      "unit": {
+        "ru": "строк",
+        "en": "rows"
+      },
+      "evidence_class": "model_estimate",
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+        "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+        "unit": {
+          "ru": "модельная оценка",
+          "en": "model estimate"
+        },
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3"
+      }
+    },
+    {
+      "label": {
+        "ru": "Симуляций неопределённости",
+        "en": "Uncertainty draws"
+      },
+      "value": 600,
+      "unit": {
+        "ru": "розыгрышей",
+        "en": "draws"
+      },
+      "evidence_class": "model_estimate",
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+        "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+        "unit": {
+          "ru": "модельная оценка",
+          "en": "model estimate"
+        },
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ppml_russia_inbound_structural_allocation_v3"
+      }
+    }
+  ],
+  "focus_rows": [
+    {
+      "id": "const",
+      "label": {
+        "ru": "Базовый уровень модели",
+        "en": "Model baseline"
+      },
+      "value": 3.4614526521615243,
+      "unit": {
+        "ru": "коэффициент",
+        "en": "coefficient"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "95% интервал: 2.2–4.7; не причинный эффект.",
+        "en": "95% interval: 2.2–4.7; not a causal effect."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+        "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+        "unit": {
+          "ru": "модельная оценка",
+          "en": "model estimate"
+        },
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "const"
+      }
+    },
+    {
+      "id": "ln_student_pool",
+      "label": {
+        "ru": "Размер молодёжного рынка",
+        "en": "Youth market size"
+      },
+      "value": 2.189933982744674,
+      "unit": {
+        "ru": "коэффициент",
+        "en": "coefficient"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "95% интервал: 1.5–2.9; не причинный эффект.",
+        "en": "95% interval: 1.5–2.9; not a causal effect."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+        "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+        "unit": {
+          "ru": "модельная оценка",
+          "en": "model estimate"
+        },
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ln_student_pool"
+      }
+    },
+    {
+      "id": "ln_distance",
+      "label": {
+        "ru": "Географическая дистанция",
+        "en": "Geographic distance"
+      },
+      "value": -0.19621613110032285,
+      "unit": {
+        "ru": "коэффициент",
+        "en": "coefficient"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "95% интервал: -1.2–0.8; не причинный эффект.",
+        "en": "95% interval: -1.2–0.8; not a causal effect."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+        "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+        "unit": {
+          "ru": "модельная оценка",
+          "en": "model estimate"
+        },
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ln_distance"
+      }
+    },
+    {
+      "id": "ln_outbound",
+      "label": {
+        "ru": "Международная мобильность из страны",
+        "en": "Outbound international mobility"
+      },
+      "value": 0.8111611990932753,
+      "unit": {
+        "ru": "коэффициент",
+        "en": "coefficient"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "95% интервал: 0.4–1.3; не причинный эффект.",
+        "en": "95% interval: 0.4–1.3; not a causal effect."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+        "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+        "unit": {
+          "ru": "модельная оценка",
+          "en": "model estimate"
+        },
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ln_outbound"
+      }
+    },
+    {
+      "id": "ln_outbound_missing",
+      "label": {
+        "ru": "Отсутствует показатель исходящей мобильности",
+        "en": "Outbound mobility missing"
+      },
+      "value": -1.4719115297109573,
+      "unit": {
+        "ru": "коэффициент",
+        "en": "coefficient"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "95% интервал: -2.6–-0.4; не причинный эффект.",
+        "en": "95% interval: -2.6–-0.4; not a causal effect."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+        "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+        "unit": {
+          "ru": "модельная оценка",
+          "en": "model estimate"
+        },
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "ln_outbound_missing"
+      }
+    },
+    {
+      "id": "tertiary_share",
+      "label": {
+        "ru": "Доля высшего образования",
+        "en": "Tertiary education share"
+      },
+      "value": 0.20552617624800493,
+      "unit": {
+        "ru": "коэффициент",
+        "en": "coefficient"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "95% интервал: -0.4–0.8; не причинный эффект.",
+        "en": "95% interval: -0.4–0.8; not a causal effect."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+        "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+        "unit": {
+          "ru": "модельная оценка",
+          "en": "model estimate"
+        },
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "tertiary_share"
+      }
+    },
+    {
+      "id": "tertiary_share_missing",
+      "label": {
+        "ru": "Отсутствует показатель высшего образования",
+        "en": "Tertiary education share missing"
+      },
+      "value": 1.5352127009963454,
+      "unit": {
+        "ru": "коэффициент",
+        "en": "coefficient"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "95% интервал: 0.3–2.7; не причинный эффект.",
+        "en": "95% interval: 0.3–2.7; not a causal effect."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+        "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+        "unit": {
+          "ru": "модельная оценка",
+          "en": "model estimate"
+        },
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "tertiary_share_missing"
+      }
+    },
+    {
+      "id": "unga_alignment",
+      "label": {
+        "ru": "Близость голосований в ООН",
+        "en": "UN voting alignment"
+      },
+      "value": 0.9311652957269587,
+      "unit": {
+        "ru": "коэффициент",
+        "en": "coefficient"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "95% интервал: 0.4–1.4; не причинный эффект.",
+        "en": "95% interval: 0.4–1.4; not a causal effect."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+        "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+        "unit": {
+          "ru": "модельная оценка",
+          "en": "model estimate"
+        },
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "unga_alignment"
+      }
+    },
+    {
+      "id": "unga_alignment_missing",
+      "label": {
+        "ru": "Отсутствует показатель близости голосований в ООН",
+        "en": "UN voting alignment missing"
+      },
+      "value": -0.020409275899455046,
+      "unit": {
+        "ru": "коэффициент",
+        "en": "coefficient"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "95% интервал: -1.1–1.1; не причинный эффект.",
+        "en": "95% interval: -1.1–1.1; not a causal effect."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+        "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+        "unit": {
+          "ru": "модельная оценка",
+          "en": "model estimate"
+        },
+        "evidence_class": "model_estimate",
+        "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+        "transform_script": "scripts/build_model_upgrades_v3.py",
+        "trace_id": "unga_alignment_missing"
+      }
+    }
+  ],
+  "source_items": [
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+      "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+      "unit": {
+        "ru": "модельная оценка",
+        "en": "model estimate"
+      },
+      "evidence_class": "model_estimate",
+      "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+      "transform_script": "scripts/build_model_upgrades_v3.py",
+      "trace_id": "ppml_russia_inbound_structural_allocation_v3"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+      "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+      "unit": {
+        "ru": "модельная оценка",
+        "en": "model estimate"
+      },
+      "evidence_class": "model_estimate",
+      "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+      "transform_script": "scripts/build_model_upgrades_v3.py",
+      "trace_id": "const"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+      "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+      "unit": {
+        "ru": "модельная оценка",
+        "en": "model estimate"
+      },
+      "evidence_class": "model_estimate",
+      "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+      "transform_script": "scripts/build_model_upgrades_v3.py",
+      "trace_id": "ln_student_pool"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+      "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+      "unit": {
+        "ru": "модельная оценка",
+        "en": "model estimate"
+      },
+      "evidence_class": "model_estimate",
+      "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+      "transform_script": "scripts/build_model_upgrades_v3.py",
+      "trace_id": "ln_distance"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+      "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+      "unit": {
+        "ru": "модельная оценка",
+        "en": "model estimate"
+      },
+      "evidence_class": "model_estimate",
+      "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+      "transform_script": "scripts/build_model_upgrades_v3.py",
+      "trace_id": "ln_outbound"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+      "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+      "unit": {
+        "ru": "модельная оценка",
+        "en": "model estimate"
+      },
+      "evidence_class": "model_estimate",
+      "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+      "transform_script": "scripts/build_model_upgrades_v3.py",
+      "trace_id": "ln_outbound_missing"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+      "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+      "unit": {
+        "ru": "модельная оценка",
+        "en": "model estimate"
+      },
+      "evidence_class": "model_estimate",
+      "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+      "transform_script": "scripts/build_model_upgrades_v3.py",
+      "trace_id": "tertiary_share"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+      "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+      "unit": {
+        "ru": "модельная оценка",
+        "en": "model estimate"
+      },
+      "evidence_class": "model_estimate",
+      "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+      "transform_script": "scripts/build_model_upgrades_v3.py",
+      "trace_id": "tertiary_share_missing"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+      "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+      "unit": {
+        "ru": "модельная оценка",
+        "en": "model estimate"
+      },
+      "evidence_class": "model_estimate",
+      "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+      "transform_script": "scripts/build_model_upgrades_v3.py",
+      "trace_id": "unga_alignment"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural PPML allocation model with diagnostics and uncertainty",
+      "source_url_or_file": "docs/data/platform2/gravity_model_report.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2010-2025 observed panel; 2026-2050 scenarios",
+      "unit": {
+        "ru": "модельная оценка",
+        "en": "model estimate"
+      },
+      "evidence_class": "model_estimate",
+      "sha256_or_etag": "7a7d3950dc22431c0fdc9d4d1dcc0f457b11f5c0eae7ba8fba021fb60596b959",
+      "transform_script": "scripts/build_model_upgrades_v3.py",
+      "trace_id": "unga_alignment_missing"
+    }
+  ],
+  "handoffs": [
+    {
+      "href": "gap.html",
+      "label": {
+        "ru": "Проверить недопредставленность",
+        "en": "Check under-representation"
+      }
+    },
+    {
+      "href": "forecast.html",
+      "label": {
+        "ru": "Перейти к сценариям",
+        "en": "Open scenarios"
+      }
+    }
+  ],
+  "interaction_chips": [
+    {
+      "ru": "коэффициент",
+      "en": "coefficient"
+    },
+    {
+      "ru": "отложенная проверка",
+      "en": "holdout"
+    },
+    {
+      "ru": "сравнительный ориентир",
+      "en": "benchmark"
+    }
+  ],
+  "row_counts": {
+    "headline_metrics": 2,
+    "focus_rows": 9,
+    "source_items": 10,
+    "handoffs": 2,
+    "interaction_chips": 3
+  },
+  "field_definitions": {
+    "headline_metrics": {
+      "label": "Bilingual metric label.",
+      "value": "Displayed presentation value derived from listed input artifacts.",
+      "unit": "Human-readable unit; never converts missingness to zero.",
+      "evidence_class": "One of the project evidence classes.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "focus_rows": {
+      "id": "Stable presentation row identifier.",
+      "label": "Bilingual or source-native row label.",
+      "value": "Displayed value for linked selection and export.",
+      "unit": "Value unit.",
+      "evidence_class": "Evidence class for the row value.",
+      "detail": "Bilingual row explanation and semantic guardrail.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "source_items": "Deduplicated source/model provenance items collected from visible metrics and rows.",
+    "handoffs": "Cross-page analytical links that may carry selected context."
+  },
+  "acceptance_notes": [
+    "PPML is explanatory; continuity benchmark is not the structural potential."
+  ]
+}

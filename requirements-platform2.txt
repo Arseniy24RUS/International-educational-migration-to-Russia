@@ -1,0 +1,10 @@
+jsonschema>=4.22
+statsmodels>=0.14
+scikit-learn>=1.4
+beautifulsoup4>=4.12
+lxml>=5.2
+python-dateutil>=2.9
+scipy>=1.11
+threadpoolctl>=3.2
+Babel>=2.14
+pytest-timeout>=2.3

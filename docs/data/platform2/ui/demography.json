@@ -1,0 +1,667 @@
+{
+  "schema_version": "world-class-ui-mart-v1",
+  "asset_version": "20260622-world-class-ui1",
+  "route": "demography",
+  "task": "5.2.3",
+  "generated_at_utc": "2026-06-22T00:00:00Z",
+  "title": {
+    "ru": "Лаборатория рынков 2050",
+    "en": "Markets 2050 lab"
+  },
+  "management_question": {
+    "ru": "Где молодёжный образовательный рынок растёт к 2050 году?",
+    "en": "Where does the youth education market grow by 2050?"
+  },
+  "input_artifacts": [
+    {
+      "path": "docs/data/mgimo_platform2_payload.json",
+      "bytes": 5122712,
+      "sha256": "a18a05b6a24a594f2e1284daf37b8f70cd16dc6bb1e54b1c9f55df7fc9aac2b7"
+    },
+    {
+      "path": "docs/data/platform2/potential_forecast_2026_2050.csv",
+      "bytes": 8705602,
+      "sha256": "26e8e3c96cb5428af9e8387a165bf1c67a503232ea01e19af5da3c4b16122ddc"
+    }
+  ],
+  "headline_metrics": [
+    {
+      "label": {
+        "ru": "Стран в прогнозном срезе",
+        "en": "Countries in projection slice"
+      },
+      "value": 207,
+      "unit": {
+        "ru": "стран",
+        "en": "country rows"
+      },
+      "evidence_class": "official_projection",
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "0dd47c4f363813ab"
+      }
+    },
+    {
+      "label": {
+        "ru": "Вариант ООН",
+        "en": "UN variant"
+      },
+      "value": "Medium",
+      "unit": {
+        "ru": "вариант",
+        "en": "variant"
+      },
+      "evidence_class": "official_projection",
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "0dd47c4f363813ab"
+      }
+    }
+  ],
+  "focus_rows": [
+    {
+      "id": "IND",
+      "label": {
+        "ru": "Индия",
+        "en": "India"
+      },
+      "value": 265407631.9,
+      "unit": {
+        "ru": "молодёжный образовательный пул",
+        "en": "age 15-24 pool"
+      },
+      "evidence_class": "official_projection",
+      "detail": {
+        "ru": "UN WPP Medium, 2050; после границы оценка/проекция это официальная проекция, не наблюдение будущего.",
+        "en": "UN WPP Medium, 2050; after the estimate/projection boundary this is an official projection, not observed future."
+      },
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "0dd47c4f363813ab"
+      },
+      "iso3": "IND",
+      "iso2": "IN",
+      "country_bearing": true
+    },
+    {
+      "id": "CHN",
+      "label": {
+        "ru": "Китай",
+        "en": "China"
+      },
+      "value": 102445108.3,
+      "unit": {
+        "ru": "молодёжный образовательный пул",
+        "en": "age 15-24 pool"
+      },
+      "evidence_class": "official_projection",
+      "detail": {
+        "ru": "UN WPP Medium, 2050; после границы оценка/проекция это официальная проекция, не наблюдение будущего.",
+        "en": "UN WPP Medium, 2050; after the estimate/projection boundary this is an official projection, not observed future."
+      },
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "24893b60be9a6507"
+      },
+      "iso3": "CHN",
+      "iso2": "CN",
+      "country_bearing": true
+    },
+    {
+      "id": "NGA",
+      "label": {
+        "ru": "Нигерия",
+        "en": "Nigeria"
+      },
+      "value": 83755558.75,
+      "unit": {
+        "ru": "молодёжный образовательный пул",
+        "en": "age 15-24 pool"
+      },
+      "evidence_class": "official_projection",
+      "detail": {
+        "ru": "UN WPP Medium, 2050; после границы оценка/проекция это официальная проекция, не наблюдение будущего.",
+        "en": "UN WPP Medium, 2050; after the estimate/projection boundary this is an official projection, not observed future."
+      },
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "c399f56334b0362b"
+      },
+      "iso3": "NGA",
+      "iso2": "NG",
+      "country_bearing": true
+    },
+    {
+      "id": "PAK",
+      "label": {
+        "ru": "Пакистан",
+        "en": "Pakistan"
+      },
+      "value": 78333663.35,
+      "unit": {
+        "ru": "молодёжный образовательный пул",
+        "en": "age 15-24 pool"
+      },
+      "evidence_class": "official_projection",
+      "detail": {
+        "ru": "UN WPP Medium, 2050; после границы оценка/проекция это официальная проекция, не наблюдение будущего.",
+        "en": "UN WPP Medium, 2050; after the estimate/projection boundary this is an official projection, not observed future."
+      },
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "a0467fae5437cbc7"
+      },
+      "iso3": "PAK",
+      "iso2": "PK",
+      "country_bearing": true
+    },
+    {
+      "id": "USA",
+      "label": {
+        "ru": "США",
+        "en": "United States of America"
+      },
+      "value": 53403202.6,
+      "unit": {
+        "ru": "молодёжный образовательный пул",
+        "en": "age 15-24 pool"
+      },
+      "evidence_class": "official_projection",
+      "detail": {
+        "ru": "UN WPP Medium, 2050; после границы оценка/проекция это официальная проекция, не наблюдение будущего.",
+        "en": "UN WPP Medium, 2050; after the estimate/projection boundary this is an official projection, not observed future."
+      },
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "b64b3b2474627a6f"
+      },
+      "iso3": "USA",
+      "iso2": "US",
+      "country_bearing": true
+    },
+    {
+      "id": "COD",
+      "label": {
+        "ru": "Демократическая Республика Конго",
+        "en": "Democratic Republic of the Congo"
+      },
+      "value": 52820092.9,
+      "unit": {
+        "ru": "молодёжный образовательный пул",
+        "en": "age 15-24 pool"
+      },
+      "evidence_class": "official_projection",
+      "detail": {
+        "ru": "UN WPP Medium, 2050; после границы оценка/проекция это официальная проекция, не наблюдение будущего.",
+        "en": "UN WPP Medium, 2050; after the estimate/projection boundary this is an official projection, not observed future."
+      },
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "04626fee67fd5e49"
+      },
+      "iso3": "COD",
+      "iso2": "CD",
+      "country_bearing": true
+    },
+    {
+      "id": "IDN",
+      "label": {
+        "ru": "Индонезия",
+        "en": "Indonesia"
+      },
+      "value": 51782590.9,
+      "unit": {
+        "ru": "молодёжный образовательный пул",
+        "en": "age 15-24 pool"
+      },
+      "evidence_class": "official_projection",
+      "detail": {
+        "ru": "UN WPP Medium, 2050; после границы оценка/проекция это официальная проекция, не наблюдение будущего.",
+        "en": "UN WPP Medium, 2050; after the estimate/projection boundary this is an official projection, not observed future."
+      },
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "eaf735fff033ba07"
+      },
+      "iso3": "IDN",
+      "iso2": "ID",
+      "country_bearing": true
+    },
+    {
+      "id": "ETH",
+      "label": {
+        "ru": "Эфиопия",
+        "en": "Ethiopia"
+      },
+      "value": 51404900.45,
+      "unit": {
+        "ru": "молодёжный образовательный пул",
+        "en": "age 15-24 pool"
+      },
+      "evidence_class": "official_projection",
+      "detail": {
+        "ru": "UN WPP Medium, 2050; после границы оценка/проекция это официальная проекция, не наблюдение будущего.",
+        "en": "UN WPP Medium, 2050; after the estimate/projection boundary this is an official projection, not observed future."
+      },
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "a4ff8c4c99480e06"
+      },
+      "iso3": "ETH",
+      "iso2": "ET",
+      "country_bearing": true
+    },
+    {
+      "id": "BGD",
+      "label": {
+        "ru": "Бангладеш",
+        "en": "Bangladesh"
+      },
+      "value": 38053506.4,
+      "unit": {
+        "ru": "молодёжный образовательный пул",
+        "en": "age 15-24 pool"
+      },
+      "evidence_class": "official_projection",
+      "detail": {
+        "ru": "UN WPP Medium, 2050; после границы оценка/проекция это официальная проекция, не наблюдение будущего.",
+        "en": "UN WPP Medium, 2050; after the estimate/projection boundary this is an official projection, not observed future."
+      },
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "069b918c325375e6"
+      },
+      "iso3": "BGD",
+      "iso2": "BD",
+      "country_bearing": true
+    },
+    {
+      "id": "EGY",
+      "label": {
+        "ru": "Египет",
+        "en": "Egypt"
+      },
+      "value": 29935246.85,
+      "unit": {
+        "ru": "молодёжный образовательный пул",
+        "en": "age 15-24 pool"
+      },
+      "evidence_class": "official_projection",
+      "detail": {
+        "ru": "UN WPP Medium, 2050; после границы оценка/проекция это официальная проекция, не наблюдение будущего.",
+        "en": "UN WPP Medium, 2050; after the estimate/projection boundary this is an official projection, not observed future."
+      },
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "5b7398d61c28ae9e"
+      },
+      "iso3": "EGY",
+      "iso2": "EG",
+      "country_bearing": true
+    },
+    {
+      "id": "TZA",
+      "label": {
+        "ru": "Танзания",
+        "en": "United Republic of Tanzania"
+      },
+      "value": 29707219.65,
+      "unit": {
+        "ru": "молодёжный образовательный пул",
+        "en": "age 15-24 pool"
+      },
+      "evidence_class": "official_projection",
+      "detail": {
+        "ru": "UN WPP Medium, 2050; после границы оценка/проекция это официальная проекция, не наблюдение будущего.",
+        "en": "UN WPP Medium, 2050; after the estimate/projection boundary this is an official projection, not observed future."
+      },
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "aa42f271ec4cf354"
+      },
+      "iso3": "TZA",
+      "iso2": "TZ",
+      "country_bearing": true
+    },
+    {
+      "id": "BRA",
+      "label": {
+        "ru": "Бразилия",
+        "en": "Brazil"
+      },
+      "value": 28950140.55,
+      "unit": {
+        "ru": "молодёжный образовательный пул",
+        "en": "age 15-24 pool"
+      },
+      "evidence_class": "official_projection",
+      "detail": {
+        "ru": "UN WPP Medium, 2050; после границы оценка/проекция это официальная проекция, не наблюдение будущего.",
+        "en": "UN WPP Medium, 2050; after the estimate/projection boundary this is an official projection, not observed future."
+      },
+      "source": {
+        "source_key": "un_wpp2024_population_by_single_age_sex",
+        "source_title": "United Nations World Population Prospects 2024",
+        "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+        "retrieved_at": "2026-06-08T23:10:23+03:00",
+        "source_period": 2050,
+        "unit": "persons",
+        "evidence_class": "official_projection",
+        "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+        "trace_id": "734c2e4a26d1e8c9"
+      },
+      "iso3": "BRA",
+      "iso2": "BR",
+      "country_bearing": true
+    }
+  ],
+  "source_items": [
+    {
+      "source_key": "un_wpp2024_population_by_single_age_sex",
+      "source_title": "United Nations World Population Prospects 2024",
+      "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+      "retrieved_at": "2026-06-08T23:10:23+03:00",
+      "source_period": 2050,
+      "unit": "persons",
+      "evidence_class": "official_projection",
+      "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+      "trace_id": "0dd47c4f363813ab"
+    },
+    {
+      "source_key": "un_wpp2024_population_by_single_age_sex",
+      "source_title": "United Nations World Population Prospects 2024",
+      "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+      "retrieved_at": "2026-06-08T23:10:23+03:00",
+      "source_period": 2050,
+      "unit": "persons",
+      "evidence_class": "official_projection",
+      "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+      "trace_id": "24893b60be9a6507"
+    },
+    {
+      "source_key": "un_wpp2024_population_by_single_age_sex",
+      "source_title": "United Nations World Population Prospects 2024",
+      "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+      "retrieved_at": "2026-06-08T23:10:23+03:00",
+      "source_period": 2050,
+      "unit": "persons",
+      "evidence_class": "official_projection",
+      "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+      "trace_id": "c399f56334b0362b"
+    },
+    {
+      "source_key": "un_wpp2024_population_by_single_age_sex",
+      "source_title": "United Nations World Population Prospects 2024",
+      "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+      "retrieved_at": "2026-06-08T23:10:23+03:00",
+      "source_period": 2050,
+      "unit": "persons",
+      "evidence_class": "official_projection",
+      "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+      "trace_id": "a0467fae5437cbc7"
+    },
+    {
+      "source_key": "un_wpp2024_population_by_single_age_sex",
+      "source_title": "United Nations World Population Prospects 2024",
+      "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+      "retrieved_at": "2026-06-08T23:10:23+03:00",
+      "source_period": 2050,
+      "unit": "persons",
+      "evidence_class": "official_projection",
+      "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+      "trace_id": "b64b3b2474627a6f"
+    },
+    {
+      "source_key": "un_wpp2024_population_by_single_age_sex",
+      "source_title": "United Nations World Population Prospects 2024",
+      "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+      "retrieved_at": "2026-06-08T23:10:23+03:00",
+      "source_period": 2050,
+      "unit": "persons",
+      "evidence_class": "official_projection",
+      "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+      "trace_id": "04626fee67fd5e49"
+    },
+    {
+      "source_key": "un_wpp2024_population_by_single_age_sex",
+      "source_title": "United Nations World Population Prospects 2024",
+      "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+      "retrieved_at": "2026-06-08T23:10:23+03:00",
+      "source_period": 2050,
+      "unit": "persons",
+      "evidence_class": "official_projection",
+      "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+      "trace_id": "eaf735fff033ba07"
+    },
+    {
+      "source_key": "un_wpp2024_population_by_single_age_sex",
+      "source_title": "United Nations World Population Prospects 2024",
+      "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+      "retrieved_at": "2026-06-08T23:10:23+03:00",
+      "source_period": 2050,
+      "unit": "persons",
+      "evidence_class": "official_projection",
+      "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+      "trace_id": "a4ff8c4c99480e06"
+    },
+    {
+      "source_key": "un_wpp2024_population_by_single_age_sex",
+      "source_title": "United Nations World Population Prospects 2024",
+      "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+      "retrieved_at": "2026-06-08T23:10:23+03:00",
+      "source_period": 2050,
+      "unit": "persons",
+      "evidence_class": "official_projection",
+      "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+      "trace_id": "069b918c325375e6"
+    },
+    {
+      "source_key": "un_wpp2024_population_by_single_age_sex",
+      "source_title": "United Nations World Population Prospects 2024",
+      "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+      "retrieved_at": "2026-06-08T23:10:23+03:00",
+      "source_period": 2050,
+      "unit": "persons",
+      "evidence_class": "official_projection",
+      "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+      "trace_id": "5b7398d61c28ae9e"
+    },
+    {
+      "source_key": "un_wpp2024_population_by_single_age_sex",
+      "source_title": "United Nations World Population Prospects 2024",
+      "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+      "retrieved_at": "2026-06-08T23:10:23+03:00",
+      "source_period": 2050,
+      "unit": "persons",
+      "evidence_class": "official_projection",
+      "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+      "trace_id": "aa42f271ec4cf354"
+    },
+    {
+      "source_key": "un_wpp2024_population_by_single_age_sex",
+      "source_title": "United Nations World Population Prospects 2024",
+      "source_url_or_file": "data/demography/raw/wpp2024/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz",
+      "retrieved_at": "2026-06-08T23:10:23+03:00",
+      "source_period": 2050,
+      "unit": "persons",
+      "evidence_class": "official_projection",
+      "sha256_or_etag": "31804a296b663716236cd26c46415271cc9386fb3b2be56aff6467ad32283dc8",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_wpp_features",
+      "trace_id": "734c2e4a26d1e8c9"
+    }
+  ],
+  "handoffs": [
+    {
+      "href": "forecast.html",
+      "label": {
+        "ru": "Проверить сценарии ёмкости",
+        "en": "Check capacity scenarios"
+      }
+    },
+    {
+      "href": "matrix.html",
+      "label": {
+        "ru": "Соединить с программами",
+        "en": "Link to programs"
+      }
+    }
+  ],
+  "interaction_chips": [
+    {
+      "ru": "оценка",
+      "en": "estimate"
+    },
+    {
+      "ru": "проекция",
+      "en": "projection"
+    },
+    {
+      "ru": "квадрант",
+      "en": "quadrant"
+    }
+  ],
+  "row_counts": {
+    "headline_metrics": 2,
+    "focus_rows": 12,
+    "source_items": 12,
+    "handoffs": 2,
+    "interaction_chips": 3
+  },
+  "field_definitions": {
+    "headline_metrics": {
+      "label": "Bilingual metric label.",
+      "value": "Displayed presentation value derived from listed input artifacts.",
+      "unit": "Human-readable unit; never converts missingness to zero.",
+      "evidence_class": "One of the project evidence classes.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "focus_rows": {
+      "id": "Stable presentation row identifier.",
+      "label": "Bilingual or source-native row label.",
+      "value": "Displayed value for linked selection and export.",
+      "unit": "Value unit.",
+      "evidence_class": "Evidence class for the row value.",
+      "detail": "Bilingual row explanation and semantic guardrail.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "source_items": "Deduplicated source/model provenance items collected from visible metrics and rows.",
+    "handoffs": "Cross-page analytical links that may carry selected context."
+  },
+  "acceptance_notes": []
+}

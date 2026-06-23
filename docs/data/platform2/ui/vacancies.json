@@ -1,0 +1,424 @@
+{
+  "schema_version": "world-class-ui-mart-v1",
+  "asset_version": "20260622-world-class-ui1",
+  "route": "vacancies",
+  "task": "5.2.6",
+  "generated_at_utc": "2026-06-22T00:00:00Z",
+  "title": {
+    "ru": "Кокпит вакансий и компетенций",
+    "en": "Vacancy and competency cockpit"
+  },
+  "management_question": {
+    "ru": "Какие программы МГИМО поддержаны наблюдаемым спросом работодателей?",
+    "en": "Which MGIMO programs are supported by observed employer demand?"
+  },
+  "input_artifacts": [
+    {
+      "path": "docs/data/platform2/trudvsem_labor_market_v5.json",
+      "bytes": 1256159,
+      "sha256": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee"
+    },
+    {
+      "path": "docs/data/platform2/country_program_priority_v5.csv",
+      "bytes": 858096,
+      "sha256": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e"
+    }
+  ],
+  "headline_metrics": [
+    {
+      "label": {
+        "ru": "Уникальных обезличенных записей",
+        "en": "Unique sanitized records"
+      },
+      "value": 29046,
+      "unit": {
+        "ru": "записей",
+        "en": "records"
+      },
+      "evidence_class": "observed_official",
+      "source": {
+        "source_key": "trudvsem_open_data_api",
+        "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+        "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2026-06-20T07:29:59+00:00",
+        "unit": {
+          "ru": "обезличенные записи",
+          "en": "sanitized records"
+        },
+        "evidence_class": "observed_official",
+        "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+        "transform_script": "scripts/build_trudvsem_model_v2.py",
+        "trace_id": "trudvsem_program_demand_v5"
+      }
+    },
+    {
+      "label": {
+        "ru": "Классифицированных записей",
+        "en": "Classified records"
+      },
+      "value": 2965,
+      "unit": {
+        "ru": "записей",
+        "en": "records"
+      },
+      "evidence_class": "calculated",
+      "source": {
+        "source_key": "trudvsem_open_data_api",
+        "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+        "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2026-06-20T07:29:59+00:00",
+        "unit": {
+          "ru": "обезличенные записи",
+          "en": "sanitized records"
+        },
+        "evidence_class": "observed_official",
+        "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+        "transform_script": "scripts/build_trudvsem_model_v2.py",
+        "trace_id": "trudvsem_program_demand_v5"
+      }
+    },
+    {
+      "label": {
+        "ru": "Строк доказательств",
+        "en": "Evidence rows"
+      },
+      "value": 4126,
+      "unit": {
+        "ru": "строк",
+        "en": "rows"
+      },
+      "evidence_class": "calculated",
+      "source": {
+        "source_key": "trudvsem_open_data_api",
+        "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+        "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2026-06-20T07:29:59+00:00",
+        "unit": {
+          "ru": "обезличенные записи",
+          "en": "sanitized records"
+        },
+        "evidence_class": "observed_official",
+        "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+        "transform_script": "scripts/build_trudvsem_model_v2.py",
+        "trace_id": "trudvsem_program_demand_v5"
+      }
+    }
+  ],
+  "focus_rows": [
+    {
+      "id": "digital_analytics",
+      "label": {
+        "ru": "Цифровая аналитика и Data/AI",
+        "en": "Digital analytics and Data/AI"
+      },
+      "value": 80.99834319526626,
+      "unit": {
+        "ru": "сигнал спроса",
+        "en": "labor-demand score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "1 284 классифицированных записей; медианная зарплата 65 000 ₽.",
+        "en": "1 284 classified records; median salary 65 000 RUB."
+      },
+      "source": {
+        "source_key": "trudvsem_open_data_api",
+        "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+        "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2026-06-20T07:29:59+00:00",
+        "unit": {
+          "ru": "обезличенные записи",
+          "en": "sanitized records"
+        },
+        "evidence_class": "observed_official",
+        "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+        "transform_script": "scripts/build_trudvsem_model_v2.py",
+        "trace_id": "digital_analytics"
+      }
+    },
+    {
+      "id": "international_economics",
+      "label": {
+        "ru": "Международная экономика и ВЭД",
+        "en": "International economics and foreign trade"
+      },
+      "value": 63.80753253946275,
+      "unit": {
+        "ru": "сигнал спроса",
+        "en": "labor-demand score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "723 классифицированных записей; медианная зарплата 55 000 ₽.",
+        "en": "723 classified records; median salary 55 000 RUB."
+      },
+      "source": {
+        "source_key": "trudvsem_open_data_api",
+        "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+        "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2026-06-20T07:29:59+00:00",
+        "unit": {
+          "ru": "обезличенные записи",
+          "en": "sanitized records"
+        },
+        "evidence_class": "observed_official",
+        "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+        "transform_script": "scripts/build_trudvsem_model_v2.py",
+        "trace_id": "international_economics"
+      }
+    },
+    {
+      "id": "languages_regional",
+      "label": {
+        "ru": "Иностранные языки и регионоведение",
+        "en": "Languages and regional studies"
+      },
+      "value": 52.684286507495834,
+      "unit": {
+        "ru": "сигнал спроса",
+        "en": "labor-demand score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "542 классифицированных записей; медианная зарплата 50 000 ₽.",
+        "en": "542 classified records; median salary 50 000 RUB."
+      },
+      "source": {
+        "source_key": "trudvsem_open_data_api",
+        "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+        "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2026-06-20T07:29:59+00:00",
+        "unit": {
+          "ru": "обезличенные записи",
+          "en": "sanitized records"
+        },
+        "evidence_class": "observed_official",
+        "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+        "transform_script": "scripts/build_trudvsem_model_v2.py",
+        "trace_id": "languages_regional"
+      }
+    },
+    {
+      "id": "legal_public",
+      "label": {
+        "ru": "Международное право и комплаенс",
+        "en": "Law and public governance"
+      },
+      "value": 33.810526315789474,
+      "unit": {
+        "ru": "сигнал спроса",
+        "en": "labor-demand score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "363 классифицированных записей; медианная зарплата 47 750 ₽.",
+        "en": "363 classified records; median salary 47 750 RUB."
+      },
+      "source": {
+        "source_key": "trudvsem_open_data_api",
+        "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+        "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2026-06-20T07:29:59+00:00",
+        "unit": {
+          "ru": "обезличенные записи",
+          "en": "sanitized records"
+        },
+        "evidence_class": "observed_official",
+        "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+        "transform_script": "scripts/build_trudvsem_model_v2.py",
+        "trace_id": "legal_public"
+      }
+    },
+    {
+      "id": "management_public",
+      "label": {
+        "ru": "Управление и государственная политика",
+        "en": "Management and public policy"
+      },
+      "value": 22.16559633027523,
+      "unit": {
+        "ru": "сигнал спроса",
+        "en": "labor-demand score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "89 классифицированных записей; медианная зарплата 83 500 ₽.",
+        "en": "89 classified records; median salary 83 500 RUB."
+      },
+      "source": {
+        "source_key": "trudvsem_open_data_api",
+        "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+        "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2026-06-20T07:29:59+00:00",
+        "unit": {
+          "ru": "обезличенные записи",
+          "en": "sanitized records"
+        },
+        "evidence_class": "observed_official",
+        "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+        "transform_script": "scripts/build_trudvsem_model_v2.py",
+        "trace_id": "management_public"
+      }
+    }
+  ],
+  "source_items": [
+    {
+      "source_key": "trudvsem_open_data_api",
+      "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+      "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2026-06-20T07:29:59+00:00",
+      "unit": {
+        "ru": "обезличенные записи",
+        "en": "sanitized records"
+      },
+      "evidence_class": "observed_official",
+      "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+      "transform_script": "scripts/build_trudvsem_model_v2.py",
+      "trace_id": "trudvsem_program_demand_v5"
+    },
+    {
+      "source_key": "trudvsem_open_data_api",
+      "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+      "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2026-06-20T07:29:59+00:00",
+      "unit": {
+        "ru": "обезличенные записи",
+        "en": "sanitized records"
+      },
+      "evidence_class": "observed_official",
+      "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+      "transform_script": "scripts/build_trudvsem_model_v2.py",
+      "trace_id": "digital_analytics"
+    },
+    {
+      "source_key": "trudvsem_open_data_api",
+      "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+      "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2026-06-20T07:29:59+00:00",
+      "unit": {
+        "ru": "обезличенные записи",
+        "en": "sanitized records"
+      },
+      "evidence_class": "observed_official",
+      "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+      "transform_script": "scripts/build_trudvsem_model_v2.py",
+      "trace_id": "international_economics"
+    },
+    {
+      "source_key": "trudvsem_open_data_api",
+      "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+      "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2026-06-20T07:29:59+00:00",
+      "unit": {
+        "ru": "обезличенные записи",
+        "en": "sanitized records"
+      },
+      "evidence_class": "observed_official",
+      "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+      "transform_script": "scripts/build_trudvsem_model_v2.py",
+      "trace_id": "languages_regional"
+    },
+    {
+      "source_key": "trudvsem_open_data_api",
+      "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+      "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2026-06-20T07:29:59+00:00",
+      "unit": {
+        "ru": "обезличенные записи",
+        "en": "sanitized records"
+      },
+      "evidence_class": "observed_official",
+      "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+      "transform_script": "scripts/build_trudvsem_model_v2.py",
+      "trace_id": "legal_public"
+    },
+    {
+      "source_key": "trudvsem_open_data_api",
+      "source_title": "Trudvsem public vacancy API, sanitized program-demand release mart",
+      "source_url_or_file": "docs/data/platform2/trudvsem_labor_market_v5.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2026-06-20T07:29:59+00:00",
+      "unit": {
+        "ru": "обезличенные записи",
+        "en": "sanitized records"
+      },
+      "evidence_class": "observed_official",
+      "sha256_or_etag": "77e3822d7aca0aa06274f374566523bfbdcae13d698ea96d611ce8469a9449ee",
+      "transform_script": "scripts/build_trudvsem_model_v2.py",
+      "trace_id": "management_public"
+    }
+  ],
+  "handoffs": [
+    {
+      "href": "matrix.html",
+      "label": {
+        "ru": "Связать с программной матрицей",
+        "en": "Link to program matrix"
+      }
+    },
+    {
+      "href": "report.html",
+      "label": {
+        "ru": "Вынести в доклад",
+        "en": "Add to report"
+      }
+    }
+  ],
+  "interaction_chips": [
+    {
+      "ru": "программа",
+      "en": "program"
+    },
+    {
+      "ru": "запись",
+      "en": "record"
+    },
+    {
+      "ru": "обезличено",
+      "en": "privacy-safe"
+    }
+  ],
+  "row_counts": {
+    "headline_metrics": 3,
+    "focus_rows": 5,
+    "source_items": 6,
+    "handoffs": 2,
+    "interaction_chips": 3
+  },
+  "field_definitions": {
+    "headline_metrics": {
+      "label": "Bilingual metric label.",
+      "value": "Displayed presentation value derived from listed input artifacts.",
+      "unit": "Human-readable unit; never converts missingness to zero.",
+      "evidence_class": "One of the project evidence classes.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "focus_rows": {
+      "id": "Stable presentation row identifier.",
+      "label": "Bilingual or source-native row label.",
+      "value": "Displayed value for linked selection and export.",
+      "unit": "Value unit.",
+      "evidence_class": "Evidence class for the row value.",
+      "detail": "Bilingual row explanation and semantic guardrail.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "source_items": "Deduplicated source/model provenance items collected from visible metrics and rows.",
+    "handoffs": "Cross-page analytical links that may carry selected context."
+  },
+  "acceptance_notes": [
+    "Public UI marts use release_record_id only; source-native record and employer-name fields are blocked."
+  ]
+}

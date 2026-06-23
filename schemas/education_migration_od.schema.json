@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Education migration OD panel 2010-2025",
+  "type": "object",
+  "required": [
+    "origin_iso3",
+    "destination_iso3",
+    "year",
+    "students_observed",
+    "source_key",
+    "source_url_or_file",
+    "observation_status"
+  ],
+  "properties": {
+    "origin_iso3": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "origin_name": {
+      "type": "string"
+    },
+    "destination_iso3": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "destination_name": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 2010,
+      "maximum": 2025
+    },
+    "students_observed": {
+      "type": "number",
+      "minimum": 0
+    },
+    "education_level": {
+      "type": "string"
+    },
+    "field_or_program": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "source_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_title": {
+      "type": "string"
+    },
+    "source_url_or_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "raw_value": {},
+    "unit": {
+      "type": "string"
+    },
+    "observation_status": {
+      "type": "string",
+      "enum": [
+        "official_or_reference",
+        "official_estimate",
+        "official_projection",
+        "harmonized_open_data",
+        "calculated",
+        "modelled",
+        "scenario_assumption_not_observed",
+        "missing_no_open_source",
+        "blocked_no_observed_inbound_flow"
+      ]
+    },
+    "license_or_terms": {
+      "type": "string"
+    },
+    "sha256_or_etag": {
+      "type": "string"
+    },
+    "transform_script": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

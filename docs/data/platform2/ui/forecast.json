@@ -1,0 +1,532 @@
+{
+  "schema_version": "world-class-ui-mart-v1",
+  "asset_version": "20260622-world-class-ui1",
+  "route": "forecast",
+  "task": "5.2.7",
+  "generated_at_utc": "2026-06-22T00:00:00Z",
+  "title": {
+    "ru": "Сценарная лаборатория 2050",
+    "en": "2050 scenario lab"
+  },
+  "management_question": {
+    "ru": "Как меняется потенциальная ёмкость при разных предпосылках ёмкости?",
+    "en": "How does potential capacity change under different capacity assumptions?"
+  },
+  "input_artifacts": [
+    {
+      "path": "docs/data/platform2/potential_forecast_2026_2050.csv",
+      "bytes": 8705602,
+      "sha256": "26e8e3c96cb5428af9e8387a165bf1c67a503232ea01e19af5da3c4b16122ddc"
+    }
+  ],
+  "headline_metrics": [
+    {
+      "label": {
+        "ru": "Стран в сценарии 2050",
+        "en": "Countries in 2050 scenario"
+      },
+      "value": 207,
+      "unit": {
+        "ru": "стран",
+        "en": "countries"
+      },
+      "evidence_class": "model_estimate",
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      }
+    },
+    {
+      "label": {
+        "ru": "Симуляций параметров",
+        "en": "Parameter draws"
+      },
+      "value": "600",
+      "unit": {
+        "ru": "розыгрышей",
+        "en": "draws"
+      },
+      "evidence_class": "model_estimate",
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      }
+    }
+  ],
+  "focus_rows": [
+    {
+      "id": "UZB",
+      "label": {
+        "ru": "Узбекистан",
+        "en": "Uzbekistan"
+      },
+      "value": "86409.2558509188",
+      "unit": {
+        "ru": "сценарная ёмкость",
+        "en": "scenario capacity"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Ограниченный сценарий: 85 162; ускоренный: 87 675.",
+        "en": "Constrained: 85 162; accelerated: 87 675."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      },
+      "iso3": "UZB",
+      "iso2": "UZ",
+      "country_bearing": true
+    },
+    {
+      "id": "TKM",
+      "label": {
+        "ru": "Туркменистан",
+        "en": "Turkmenistan"
+      },
+      "value": "58592.894332417716",
+      "unit": {
+        "ru": "сценарная ёмкость",
+        "en": "scenario capacity"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Ограниченный сценарий: 57 747; ускоренный: 59 451.",
+        "en": "Constrained: 57 747; accelerated: 59 451."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      },
+      "iso3": "TKM",
+      "iso2": "TM",
+      "country_bearing": true
+    },
+    {
+      "id": "BLR",
+      "label": {
+        "ru": "Беларусь",
+        "en": "Belarus"
+      },
+      "value": "26845.34058008585",
+      "unit": {
+        "ru": "сценарная ёмкость",
+        "en": "scenario capacity"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Ограниченный сценарий: 26 458; ускоренный: 27 239.",
+        "en": "Constrained: 26 458; accelerated: 27 239."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      },
+      "iso3": "BLR",
+      "iso2": "BY",
+      "country_bearing": true
+    },
+    {
+      "id": "AZE",
+      "label": {
+        "ru": "Азербайджан",
+        "en": "Azerbaijan"
+      },
+      "value": "19584.12229764253",
+      "unit": {
+        "ru": "сценарная ёмкость",
+        "en": "scenario capacity"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Ограниченный сценарий: 19 301; ускоренный: 19 871.",
+        "en": "Constrained: 19 301; accelerated: 19 871."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      },
+      "iso3": "AZE",
+      "iso2": "AZ",
+      "country_bearing": true
+    },
+    {
+      "id": "KAZ",
+      "label": {
+        "ru": "Казахстан",
+        "en": "Kazakhstan"
+      },
+      "value": "17294.235738773787",
+      "unit": {
+        "ru": "сценарная ёмкость",
+        "en": "scenario capacity"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Ограниченный сценарий: 17 045; ускоренный: 17 548.",
+        "en": "Constrained: 17 045; accelerated: 17 548."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      },
+      "iso3": "KAZ",
+      "iso2": "KZ",
+      "country_bearing": true
+    },
+    {
+      "id": "CHN",
+      "label": {
+        "ru": "Китай",
+        "en": "China"
+      },
+      "value": "14615.72819921858",
+      "unit": {
+        "ru": "сценарная ёмкость",
+        "en": "scenario capacity"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Ограниченный сценарий: 14 405; ускоренный: 14 830.",
+        "en": "Constrained: 14 405; accelerated: 14 830."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      },
+      "iso3": "CHN",
+      "iso2": "CN",
+      "country_bearing": true
+    },
+    {
+      "id": "PAK",
+      "label": {
+        "ru": "Пакистан",
+        "en": "Pakistan"
+      },
+      "value": "14333.702985553042",
+      "unit": {
+        "ru": "сценарная ёмкость",
+        "en": "scenario capacity"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Ограниченный сценарий: 14 127; ускоренный: 14 544.",
+        "en": "Constrained: 14 127; accelerated: 14 544."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      },
+      "iso3": "PAK",
+      "iso2": "PK",
+      "country_bearing": true
+    },
+    {
+      "id": "TJK",
+      "label": {
+        "ru": "Таджикистан",
+        "en": "Tajikistan"
+      },
+      "value": "11355.391729749768",
+      "unit": {
+        "ru": "сценарная ёмкость",
+        "en": "scenario capacity"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Ограниченный сценарий: 11 191; ускоренный: 11 522.",
+        "en": "Constrained: 11 191; accelerated: 11 522."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      },
+      "iso3": "TJK",
+      "iso2": "TJ",
+      "country_bearing": true
+    },
+    {
+      "id": "IND",
+      "label": {
+        "ru": "Индия",
+        "en": "India"
+      },
+      "value": "11052.401515381785",
+      "unit": {
+        "ru": "сценарная ёмкость",
+        "en": "scenario capacity"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Ограниченный сценарий: 10 893; ускоренный: 11 214.",
+        "en": "Constrained: 10 893; accelerated: 11 214."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      },
+      "iso3": "IND",
+      "iso2": "IN",
+      "country_bearing": true
+    },
+    {
+      "id": "SYR",
+      "label": {
+        "ru": "Сирия",
+        "en": "Syrian Arab Republic"
+      },
+      "value": "6415.348484675298",
+      "unit": {
+        "ru": "сценарная ёмкость",
+        "en": "scenario capacity"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Ограниченный сценарий: 6 323; ускоренный: 6 509.",
+        "en": "Constrained: 6 323; accelerated: 6 509."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      },
+      "iso3": "SYR",
+      "iso2": "SY",
+      "country_bearing": true
+    },
+    {
+      "id": "KGZ",
+      "label": {
+        "ru": "Киргизия",
+        "en": "Kyrgyzstan"
+      },
+      "value": "5309.794830626664",
+      "unit": {
+        "ru": "сценарная ёмкость",
+        "en": "scenario capacity"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Ограниченный сценарий: 5 233; ускоренный: 5 388.",
+        "en": "Constrained: 5 233; accelerated: 5 388."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      },
+      "iso3": "KGZ",
+      "iso2": "KG",
+      "country_bearing": true
+    },
+    {
+      "id": "TUR",
+      "label": {
+        "ru": "Турция",
+        "en": "Türkiye"
+      },
+      "value": "5172.61220111721",
+      "unit": {
+        "ru": "сценарная ёмкость",
+        "en": "scenario capacity"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Ограниченный сценарий: 5 098; ускоренный: 5 248.",
+        "en": "Constrained: 5 098; accelerated: 5 248."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "2050",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "modelled_structural_capacity",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": ""
+      },
+      "iso3": "TUR",
+      "iso2": "TR",
+      "country_bearing": true
+    }
+  ],
+  "source_items": [
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural PPML allocation model with demographic continuity benchmark",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "2050",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "modelled_structural_capacity",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": ""
+    }
+  ],
+  "handoffs": [
+    {
+      "href": "gap.html",
+      "label": {
+        "ru": "Сравнить с фактом",
+        "en": "Compare with actual"
+      }
+    },
+    {
+      "href": "matrix.html",
+      "label": {
+        "ru": "Перейти к пилотам",
+        "en": "Open pilots"
+      }
+    }
+  ],
+  "interaction_chips": [
+    {
+      "ru": "год",
+      "en": "year"
+    },
+    {
+      "ru": "сценарий",
+      "en": "scenario"
+    },
+    {
+      "ru": "интервал",
+      "en": "interval"
+    }
+  ],
+  "row_counts": {
+    "headline_metrics": 2,
+    "focus_rows": 12,
+    "source_items": 1,
+    "handoffs": 2,
+    "interaction_chips": 3
+  },
+  "field_definitions": {
+    "headline_metrics": {
+      "label": "Bilingual metric label.",
+      "value": "Displayed presentation value derived from listed input artifacts.",
+      "unit": "Human-readable unit; never converts missingness to zero.",
+      "evidence_class": "One of the project evidence classes.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "focus_rows": {
+      "id": "Stable presentation row identifier.",
+      "label": "Bilingual or source-native row label.",
+      "value": "Displayed value for linked selection and export.",
+      "unit": "Value unit.",
+      "evidence_class": "Evidence class for the row value.",
+      "detail": "Bilingual row explanation and semantic guardrail.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "source_items": "Deduplicated source/model provenance items collected from visible metrics and rows.",
+    "handoffs": "Cross-page analytical links that may carry selected context."
+  },
+  "acceptance_notes": [
+    "Scenario capacity is not a guaranteed enrolment forecast."
+  ]
+}

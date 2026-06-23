@@ -1,0 +1,662 @@
+{
+  "schema_version": "world-class-ui-mart-v1",
+  "asset_version": "20260622-world-class-ui1",
+  "route": "gap",
+  "task": "5.2.8",
+  "generated_at_utc": "2026-06-22T00:00:00Z",
+  "title": {
+    "ru": "Рабочая зона структурного разрыва",
+    "en": "Structural-gap workbench"
+  },
+  "management_question": {
+    "ru": "Где фактический контингент ниже структурной ёмкости устойчиво, а не случайно?",
+    "en": "Where is actual student stock robustly below structural capacity?"
+  },
+  "input_artifacts": [
+    {
+      "path": "docs/data/platform2/unrealized_potential_gap.csv",
+      "bytes": 382832,
+      "sha256": "825e69792d85599ebe7d057938a0d2b4619b731d72a85549d4139f1f0bd1ab81"
+    }
+  ],
+  "headline_metrics": [
+    {
+      "label": {
+        "ru": "Ранжируемых стран",
+        "en": "Rankable countries"
+      },
+      "value": 145,
+      "unit": {
+        "ru": "стран",
+        "en": "countries"
+      },
+      "evidence_class": "calculated",
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "ed58338924b5b330"
+      }
+    },
+    {
+      "label": {
+        "ru": "Симуляций параметров",
+        "en": "Parameter draws"
+      },
+      "value": "600",
+      "unit": {
+        "ru": "розыгрышей",
+        "en": "draws"
+      },
+      "evidence_class": "model_estimate",
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "ed58338924b5b330"
+      }
+    }
+  ],
+  "focus_rows": [
+    {
+      "id": "BLR",
+      "label": {
+        "ru": "Беларусь",
+        "en": "Belarus"
+      },
+      "value": "30445.19890863655",
+      "unit": {
+        "ru": "студентов-эквивалент",
+        "en": "student-equivalent gap"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Вероятность положительного разрыва 100.0%; факт 9 369; медианный разрыв 27 908.",
+        "en": "Positive-gap probability 100.0%; actual 9 369; median gap 27 908."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "ed58338924b5b330"
+      },
+      "iso3": "BLR",
+      "iso2": "BY",
+      "country_bearing": true
+    },
+    {
+      "id": "AZE",
+      "label": {
+        "ru": "Азербайджан",
+        "en": "Azerbaijan"
+      },
+      "value": "15116.55996574624",
+      "unit": {
+        "ru": "студентов-эквивалент",
+        "en": "student-equivalent gap"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Вероятность положительного разрыва 100.0%; факт 5 965; медианный разрыв 13 587.",
+        "en": "Positive-gap probability 100.0%; actual 5 965; median gap 13 587."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "2c42939624a5a0fc"
+      },
+      "iso3": "AZE",
+      "iso2": "AZ",
+      "country_bearing": true
+    },
+    {
+      "id": "PAK",
+      "label": {
+        "ru": "Пакистан",
+        "en": "Pakistan"
+      },
+      "value": "11806.213649600293",
+      "unit": {
+        "ru": "студентов-эквивалент",
+        "en": "student-equivalent gap"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Вероятность положительного разрыва 100.0%; факт 636; медианный разрыв 11 025.",
+        "en": "Positive-gap probability 100.0%; actual 636; median gap 11 025."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "92bb667e6ab75b35"
+      },
+      "iso3": "PAK",
+      "iso2": "PK",
+      "country_bearing": true
+    },
+    {
+      "id": "TUR",
+      "label": {
+        "ru": "Турция",
+        "en": "Türkiye"
+      },
+      "value": "6271.814851981322",
+      "unit": {
+        "ru": "студентов-эквивалент",
+        "en": "student-equivalent gap"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Вероятность положительного разрыва 100.0%; факт 911; медианный разрыв 5 788.",
+        "en": "Positive-gap probability 100.0%; actual 911; median gap 5 788."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "7c6ad2a3f6553879"
+      },
+      "iso3": "TUR",
+      "iso2": "TR",
+      "country_bearing": true
+    },
+    {
+      "id": "SRB",
+      "label": {
+        "ru": "Сербия",
+        "en": "Serbia"
+      },
+      "value": "1862.9553713367163",
+      "unit": {
+        "ru": "студентов-эквивалент",
+        "en": "student-equivalent gap"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Вероятность положительного разрыва 100.0%; факт 360; медианный разрыв 1 669.",
+        "en": "Positive-gap probability 100.0%; actual 360; median gap 1 669."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "15329a7017c4a968"
+      },
+      "iso3": "SRB",
+      "iso2": "RS",
+      "country_bearing": true
+    },
+    {
+      "id": "NPL",
+      "label": {
+        "ru": "Непал",
+        "en": "Nepal"
+      },
+      "value": "1075.5996140261825",
+      "unit": {
+        "ru": "студентов-эквивалент",
+        "en": "student-equivalent gap"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Вероятность положительного разрыва 100.0%; факт 94; медианный разрыв 998.",
+        "en": "Positive-gap probability 100.0%; actual 94; median gap 998."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "1978a915cf588c87"
+      },
+      "iso3": "NPL",
+      "iso2": "NP",
+      "country_bearing": true
+    },
+    {
+      "id": "SAU",
+      "label": {
+        "ru": "Саудовская Аравия",
+        "en": "Saudi Arabia"
+      },
+      "value": "1026.3129269398264",
+      "unit": {
+        "ru": "студентов-эквивалент",
+        "en": "student-equivalent gap"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Вероятность положительного разрыва 100.0%; факт 162; медианный разрыв 950.",
+        "en": "Positive-gap probability 100.0%; actual 162; median gap 950."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "a53f1c602e40a401"
+      },
+      "iso3": "SAU",
+      "iso2": "SA",
+      "country_bearing": true
+    },
+    {
+      "id": "MLI",
+      "label": {
+        "ru": "Мали",
+        "en": "Mali"
+      },
+      "value": "784.3979453296448",
+      "unit": {
+        "ru": "студентов-эквивалент",
+        "en": "student-equivalent gap"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Вероятность положительного разрыва 100.0%; факт 196; медианный разрыв 726.",
+        "en": "Positive-gap probability 100.0%; actual 196; median gap 726."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "398207022723d331"
+      },
+      "iso3": "MLI",
+      "iso2": "ML",
+      "country_bearing": true
+    },
+    {
+      "id": "NER",
+      "label": {
+        "ru": "Нигер",
+        "en": "Niger"
+      },
+      "value": "494.4652025116648",
+      "unit": {
+        "ru": "студентов-эквивалент",
+        "en": "student-equivalent gap"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Вероятность положительного разрыва 100.0%; факт 27; медианный разрыв 472.",
+        "en": "Positive-gap probability 100.0%; actual 27; median gap 472."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "5b128bb88b19c3d8"
+      },
+      "iso3": "NER",
+      "iso2": "NE",
+      "country_bearing": true
+    },
+    {
+      "id": "OMN",
+      "label": {
+        "ru": "Оман",
+        "en": "Oman"
+      },
+      "value": "502.2737759432396",
+      "unit": {
+        "ru": "студентов-эквивалент",
+        "en": "student-equivalent gap"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Вероятность положительного разрыва 100.0%; факт 24; медианный разрыв 460.",
+        "en": "Positive-gap probability 100.0%; actual 24; median gap 460."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "4a2b9aefcc3e579c"
+      },
+      "iso3": "OMN",
+      "iso2": "OM",
+      "country_bearing": true
+    },
+    {
+      "id": "PHL",
+      "label": {
+        "ru": "Филиппины",
+        "en": "Philippines"
+      },
+      "value": "484.6717004001166",
+      "unit": {
+        "ru": "студентов-эквивалент",
+        "en": "student-equivalent gap"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Вероятность положительного разрыва 100.0%; факт 17; медианный разрыв 450.",
+        "en": "Positive-gap probability 100.0%; actual 17; median gap 450."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "ed6cfb57bc1f3aef"
+      },
+      "iso3": "PHL",
+      "iso2": "PH",
+      "country_bearing": true
+    },
+    {
+      "id": "BIH",
+      "label": {
+        "ru": "Босния и Герцеговина",
+        "en": "Bosnia and Herzegovina"
+      },
+      "value": "476.02545396448784",
+      "unit": {
+        "ru": "студентов-эквивалент",
+        "en": "student-equivalent gap"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Вероятность положительного разрыва 100.0%; факт 74; медианный разрыв 431.",
+        "en": "Positive-gap probability 100.0%; actual 74; median gap 431."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_structural_allocation_v3",
+        "source_title": "Structural under-representation gap relative to demographic continuity",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "not_applicable_model_output",
+        "source_period": "actual=2023;capacity=2026",
+        "unit": "students_capacity_equivalent",
+        "evidence_class": "calculated_structural_gap",
+        "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+        "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+        "trace_id": "eecd714ab182497e"
+      },
+      "iso3": "BIH",
+      "iso2": "BA",
+      "country_bearing": true
+    }
+  ],
+  "source_items": [
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural under-representation gap relative to demographic continuity",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "actual=2023;capacity=2026",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "calculated_structural_gap",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": "ed58338924b5b330"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural under-representation gap relative to demographic continuity",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "actual=2023;capacity=2026",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "calculated_structural_gap",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": "2c42939624a5a0fc"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural under-representation gap relative to demographic continuity",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "actual=2023;capacity=2026",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "calculated_structural_gap",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": "92bb667e6ab75b35"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural under-representation gap relative to demographic continuity",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "actual=2023;capacity=2026",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "calculated_structural_gap",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": "7c6ad2a3f6553879"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural under-representation gap relative to demographic continuity",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "actual=2023;capacity=2026",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "calculated_structural_gap",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": "15329a7017c4a968"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural under-representation gap relative to demographic continuity",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "actual=2023;capacity=2026",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "calculated_structural_gap",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": "1978a915cf588c87"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural under-representation gap relative to demographic continuity",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "actual=2023;capacity=2026",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "calculated_structural_gap",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": "a53f1c602e40a401"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural under-representation gap relative to demographic continuity",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "actual=2023;capacity=2026",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "calculated_structural_gap",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": "398207022723d331"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural under-representation gap relative to demographic continuity",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "actual=2023;capacity=2026",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "calculated_structural_gap",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": "5b128bb88b19c3d8"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural under-representation gap relative to demographic continuity",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "actual=2023;capacity=2026",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "calculated_structural_gap",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": "4a2b9aefcc3e579c"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural under-representation gap relative to demographic continuity",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "actual=2023;capacity=2026",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "calculated_structural_gap",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": "ed6cfb57bc1f3aef"
+    },
+    {
+      "source_key": "ppml_russia_inbound_structural_allocation_v3",
+      "source_title": "Structural under-representation gap relative to demographic continuity",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "not_applicable_model_output",
+      "source_period": "actual=2023;capacity=2026",
+      "unit": "students_capacity_equivalent",
+      "evidence_class": "calculated_structural_gap",
+      "sha256_or_etag": "9e22c41768ecc2a32ea8f418f12944d813c97ce0ee267aea4c0da147fd77d4c6",
+      "transform_script": "mgimo_platform2.models.educational_migration_v3::build_structural_forecast_v3",
+      "trace_id": "eecd714ab182497e"
+    }
+  ],
+  "handoffs": [
+    {
+      "href": "matrix.html",
+      "label": {
+        "ru": "Преобразовать в действие",
+        "en": "Convert into action"
+      }
+    },
+    {
+      "href": "report.html",
+      "label": {
+        "ru": "Добавить в доклад",
+        "en": "Add to report"
+      }
+    }
+  ],
+  "interaction_chips": [
+    {
+      "ru": "факт",
+      "en": "actual"
+    },
+    {
+      "ru": "структурная ёмкость",
+      "en": "capacity"
+    },
+    {
+      "ru": "P+",
+      "en": "P+"
+    }
+  ],
+  "row_counts": {
+    "headline_metrics": 2,
+    "focus_rows": 12,
+    "source_items": 12,
+    "handoffs": 2,
+    "interaction_chips": 3
+  },
+  "field_definitions": {
+    "headline_metrics": {
+      "label": "Bilingual metric label.",
+      "value": "Displayed presentation value derived from listed input artifacts.",
+      "unit": "Human-readable unit; never converts missingness to zero.",
+      "evidence_class": "One of the project evidence classes.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "focus_rows": {
+      "id": "Stable presentation row identifier.",
+      "label": "Bilingual or source-native row label.",
+      "value": "Displayed value for linked selection and export.",
+      "unit": "Value unit.",
+      "evidence_class": "Evidence class for the row value.",
+      "detail": "Bilingual row explanation and semantic guardrail.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "source_items": "Deduplicated source/model provenance items collected from visible metrics and rows.",
+    "handoffs": "Cross-page analytical links that may carry selected context."
+  },
+  "acceptance_notes": []
+}

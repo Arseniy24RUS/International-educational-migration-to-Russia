@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Friendliness and educational receptivity to Russia index",
+  "type": "object",
+  "required": [
+    "iso3",
+    "year",
+    "component",
+    "raw_value",
+    "normalized_value",
+    "component_weight",
+    "source_key",
+    "observation_status"
+  ],
+  "properties": {
+    "iso3": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 2010,
+      "maximum": 2026
+    },
+    "component": {
+      "type": "string",
+      "enum": [
+        "F_SURVEY_RUSSIA_ATTITUDE",
+        "F_INSTITUTIONAL_TIES",
+        "F_LANGUAGE_CULTURE",
+        "F_BEHAVIORAL",
+        "F_DIPLOMATIC_ALIGNMENT"
+      ]
+    },
+    "raw_value": {},
+    "normalized_value": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "component_weight": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "question_or_indicator_code": {
+      "type": "string"
+    },
+    "source_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_title": {
+      "type": "string"
+    },
+    "source_url_or_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "observation_status": {
+      "type": "string",
+      "enum": [
+        "official_or_reference",
+        "official_estimate",
+        "official_projection",
+        "harmonized_open_data",
+        "calculated",
+        "modelled",
+        "scenario_assumption_not_observed",
+        "missing_no_open_source",
+        "blocked_no_observed_inbound_flow"
+      ]
+    },
+    "license_or_terms": {
+      "type": "string"
+    },
+    "sha256_or_etag": {
+      "type": "string"
+    },
+    "transform_script": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

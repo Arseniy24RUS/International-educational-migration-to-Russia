@@ -1,0 +1,664 @@
+{
+  "schema_version": "world-class-ui-mart-v1",
+  "asset_version": "20260622-world-class-ui1",
+  "route": "friendliness",
+  "task": "5.2.5",
+  "generated_at_utc": "2026-06-22T00:00:00Z",
+  "title": {
+    "ru": "Профиль восприимчивости",
+    "en": "Receptivity profile"
+  },
+  "management_question": {
+    "ru": "Где условия взаимодействия с Россией подтверждены, а где доказательства ограничены?",
+    "en": "Where is receptivity to Russia supported and where is evidence limited?"
+  },
+  "input_artifacts": [
+    {
+      "path": "docs/data/platform2/friendliness_index.csv",
+      "bytes": 274179,
+      "sha256": "5834a10544798be52412a79930d562175a79811153e29cacda2dd579c599d344"
+    }
+  ],
+  "headline_metrics": [
+    {
+      "label": {
+        "ru": "Стран в индексе",
+        "en": "Countries in index"
+      },
+      "value": 217,
+      "unit": {
+        "ru": "стран",
+        "en": "countries"
+      },
+      "evidence_class": "model_estimate",
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "14c688c15204516ce10dbdcefa7c6ee144c5c0e06ce792868114aeb0917c10d2",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      }
+    },
+    {
+      "label": {
+        "ru": "Высокая/умеренная надёжность",
+        "en": "High/moderate reliability"
+      },
+      "value": 29,
+      "unit": {
+        "ru": "стран",
+        "en": "countries"
+      },
+      "evidence_class": "calculated",
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "14c688c15204516ce10dbdcefa7c6ee144c5c0e06ce792868114aeb0917c10d2",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      }
+    }
+  ],
+  "focus_rows": [
+    {
+      "id": "VNM",
+      "label": {
+        "ru": "Вьетнам",
+        "en": "Viet Nam"
+      },
+      "value": "74.46384773521994",
+      "unit": {
+        "ru": "ограниченный балл",
+        "en": "bounded score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Диапазон 57.0–92.0; умеренная надёжность.",
+        "en": "Range 57.0–92.0; moderate reliability."
+      },
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "14c688c15204516ce10dbdcefa7c6ee144c5c0e06ce792868114aeb0917c10d2",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      },
+      "iso3": "VNM",
+      "iso2": "VN",
+      "country_bearing": true
+    },
+    {
+      "id": "KGZ",
+      "label": {
+        "ru": "Киргизская Республика",
+        "en": "Kyrgyz Republic"
+      },
+      "value": "70.07262329797234",
+      "unit": {
+        "ru": "ограниченный балл",
+        "en": "bounded score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Диапазон 60.1–80.1; умеренная надёжность.",
+        "en": "Range 60.1–80.1; moderate reliability."
+      },
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "443f87c5a0e9df30c152c15dca3395635f06115803129034d9d732894c963e6b",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      },
+      "iso3": "KGZ",
+      "iso2": "KG",
+      "country_bearing": true
+    },
+    {
+      "id": "PRK",
+      "label": {
+        "ru": "КНДР",
+        "en": "Korea, Dem. People's Rep."
+      },
+      "value": "70.01277546029631",
+      "unit": {
+        "ru": "ограниченный балл",
+        "en": "bounded score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Диапазон 42.5–97.5; ограниченная доказательность.",
+        "en": "Range 42.5–97.5; limited reliability."
+      },
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "d1cea3a36783f89809194dde0c03af0cdffc72dd2d2830460824c2d0bbe55cd9",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      },
+      "iso3": "PRK",
+      "iso2": "KP",
+      "country_bearing": true
+    },
+    {
+      "id": "BLR",
+      "label": {
+        "ru": "Беларусь",
+        "en": "Belarus"
+      },
+      "value": "68.04837138372176",
+      "unit": {
+        "ru": "ограниченный балл",
+        "en": "bounded score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Диапазон 48.0–88.0; ограниченная доказательность.",
+        "en": "Range 48.0–88.0; limited reliability."
+      },
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "58ef2c566551c73eaf14d3cf76f2da6787b18f0621b12f02c99175e8d0d2e53c",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      },
+      "iso3": "BLR",
+      "iso2": "BY",
+      "country_bearing": true
+    },
+    {
+      "id": "SYR",
+      "label": {
+        "ru": "Сирия",
+        "en": "Syrian Arab Republic"
+      },
+      "value": "67.47725890252876",
+      "unit": {
+        "ru": "ограниченный балл",
+        "en": "bounded score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Диапазон 40.0–95.0; ограниченная доказательность.",
+        "en": "Range 40.0–95.0; limited reliability."
+      },
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "1ab99200988e87d51d769dee71a1ffcc4b453b8808c6129db791fcff9df0d7b1",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      },
+      "iso3": "SYR",
+      "iso2": "SY",
+      "country_bearing": true
+    },
+    {
+      "id": "NIC",
+      "label": {
+        "ru": "Никарагуа",
+        "en": "Nicaragua"
+      },
+      "value": "67.31861142770944",
+      "unit": {
+        "ru": "ограниченный балл",
+        "en": "bounded score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Диапазон 39.8–94.8; ограниченная доказательность.",
+        "en": "Range 39.8–94.8; limited reliability."
+      },
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "a0915d5daa64d5cf893478d5c7c5ebe73d966861a2b68385886d6c0e5fd47cf6",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      },
+      "iso3": "NIC",
+      "iso2": "NI",
+      "country_bearing": true
+    },
+    {
+      "id": "IND",
+      "label": {
+        "ru": "Индия",
+        "en": "India"
+      },
+      "value": "67.02033296735479",
+      "unit": {
+        "ru": "ограниченный балл",
+        "en": "bounded score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Диапазон 49.5–84.5; умеренная надёжность.",
+        "en": "Range 49.5–84.5; moderate reliability."
+      },
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "c42b4a09bbab06b7e1f27043b7a4289dd075f4719db5f48ee7cd0e741eb36026",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      },
+      "iso3": "IND",
+      "iso2": "IN",
+      "country_bearing": true
+    },
+    {
+      "id": "RUS",
+      "label": {
+        "ru": "Российская Федерация",
+        "en": "Russian Federation"
+      },
+      "value": "66.59477967918674",
+      "unit": {
+        "ru": "ограниченный балл",
+        "en": "bounded score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Диапазон 34.1–99.1; низкая доказательность.",
+        "en": "Range 34.1–99.1; low reliability."
+      },
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "ac86d45de1821009e231fc997d4297547e0b76c6b67d0ae134994aa86550dcd7",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      },
+      "iso3": "RUS",
+      "iso2": "RU",
+      "country_bearing": true
+    },
+    {
+      "id": "VEN",
+      "label": {
+        "ru": "Венесуэла",
+        "en": "Venezuela, RB"
+      },
+      "value": "66.4158160638801",
+      "unit": {
+        "ru": "ограниченный балл",
+        "en": "bounded score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Диапазон 38.9–93.9; ограниченная доказательность.",
+        "en": "Range 38.9–93.9; limited reliability."
+      },
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "869e3f04e0df0d593b71c7e30cd496252be19129b39d8dccffb11003d014f768",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      },
+      "iso3": "VEN",
+      "iso2": "VE",
+      "country_bearing": true
+    },
+    {
+      "id": "PAK",
+      "label": {
+        "ru": "Пакистан",
+        "en": "Pakistan"
+      },
+      "value": "66.37628425283746",
+      "unit": {
+        "ru": "ограниченный балл",
+        "en": "bounded score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Диапазон 38.9–93.9; ограниченная доказательность.",
+        "en": "Range 38.9–93.9; limited reliability."
+      },
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "0b6a89b1ee53a774f071de8dd737357a8182498b3d589d70833b6dc520b40ffa",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      },
+      "iso3": "PAK",
+      "iso2": "PK",
+      "country_bearing": true
+    },
+    {
+      "id": "MLI",
+      "label": {
+        "ru": "Мали",
+        "en": "Mali"
+      },
+      "value": "66.36127576000781",
+      "unit": {
+        "ru": "ограниченный балл",
+        "en": "bounded score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Диапазон 38.9–93.9; ограниченная доказательность.",
+        "en": "Range 38.9–93.9; limited reliability."
+      },
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "2076f27120c2a18e580882303695aedfa44157579aefd31f28cc18d6654571e4",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      },
+      "iso3": "MLI",
+      "iso2": "ML",
+      "country_bearing": true
+    },
+    {
+      "id": "IRN",
+      "label": {
+        "ru": "Иран",
+        "en": "Iran, Islamic Rep."
+      },
+      "value": "66.21872470868861",
+      "unit": {
+        "ru": "ограниченный балл",
+        "en": "bounded score"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Диапазон 38.7–93.7; ограниченная доказательность.",
+        "en": "Range 38.7–93.7; limited reliability."
+      },
+      "source": {
+        "source_key": "friendliness_receptivity_ex_ante_v4",
+        "source_title": "Composite ex-ante friendliness index from published components",
+        "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+        "retrieved_at": "not_applicable_calculated_from_component_passports",
+        "source_period": "2025",
+        "unit": "0-100 index",
+        "evidence_class": "calculated_ex_ante_index",
+        "sha256_or_etag": "5486b87faa14b02289dbf7d23101d029cd3830e480cfe316b195bc7340315a32",
+        "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+        "trace_id": ""
+      },
+      "iso3": "IRN",
+      "iso2": "IR",
+      "country_bearing": true
+    }
+  ],
+  "source_items": [
+    {
+      "source_key": "friendliness_receptivity_ex_ante_v4",
+      "source_title": "Composite ex-ante friendliness index from published components",
+      "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+      "retrieved_at": "not_applicable_calculated_from_component_passports",
+      "source_period": "2025",
+      "unit": "0-100 index",
+      "evidence_class": "calculated_ex_ante_index",
+      "sha256_or_etag": "14c688c15204516ce10dbdcefa7c6ee144c5c0e06ce792868114aeb0917c10d2",
+      "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+      "trace_id": ""
+    },
+    {
+      "source_key": "friendliness_receptivity_ex_ante_v4",
+      "source_title": "Composite ex-ante friendliness index from published components",
+      "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+      "retrieved_at": "not_applicable_calculated_from_component_passports",
+      "source_period": "2025",
+      "unit": "0-100 index",
+      "evidence_class": "calculated_ex_ante_index",
+      "sha256_or_etag": "443f87c5a0e9df30c152c15dca3395635f06115803129034d9d732894c963e6b",
+      "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+      "trace_id": ""
+    },
+    {
+      "source_key": "friendliness_receptivity_ex_ante_v4",
+      "source_title": "Composite ex-ante friendliness index from published components",
+      "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+      "retrieved_at": "not_applicable_calculated_from_component_passports",
+      "source_period": "2025",
+      "unit": "0-100 index",
+      "evidence_class": "calculated_ex_ante_index",
+      "sha256_or_etag": "d1cea3a36783f89809194dde0c03af0cdffc72dd2d2830460824c2d0bbe55cd9",
+      "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+      "trace_id": ""
+    },
+    {
+      "source_key": "friendliness_receptivity_ex_ante_v4",
+      "source_title": "Composite ex-ante friendliness index from published components",
+      "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+      "retrieved_at": "not_applicable_calculated_from_component_passports",
+      "source_period": "2025",
+      "unit": "0-100 index",
+      "evidence_class": "calculated_ex_ante_index",
+      "sha256_or_etag": "58ef2c566551c73eaf14d3cf76f2da6787b18f0621b12f02c99175e8d0d2e53c",
+      "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+      "trace_id": ""
+    },
+    {
+      "source_key": "friendliness_receptivity_ex_ante_v4",
+      "source_title": "Composite ex-ante friendliness index from published components",
+      "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+      "retrieved_at": "not_applicable_calculated_from_component_passports",
+      "source_period": "2025",
+      "unit": "0-100 index",
+      "evidence_class": "calculated_ex_ante_index",
+      "sha256_or_etag": "1ab99200988e87d51d769dee71a1ffcc4b453b8808c6129db791fcff9df0d7b1",
+      "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+      "trace_id": ""
+    },
+    {
+      "source_key": "friendliness_receptivity_ex_ante_v4",
+      "source_title": "Composite ex-ante friendliness index from published components",
+      "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+      "retrieved_at": "not_applicable_calculated_from_component_passports",
+      "source_period": "2025",
+      "unit": "0-100 index",
+      "evidence_class": "calculated_ex_ante_index",
+      "sha256_or_etag": "a0915d5daa64d5cf893478d5c7c5ebe73d966861a2b68385886d6c0e5fd47cf6",
+      "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+      "trace_id": ""
+    },
+    {
+      "source_key": "friendliness_receptivity_ex_ante_v4",
+      "source_title": "Composite ex-ante friendliness index from published components",
+      "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+      "retrieved_at": "not_applicable_calculated_from_component_passports",
+      "source_period": "2025",
+      "unit": "0-100 index",
+      "evidence_class": "calculated_ex_ante_index",
+      "sha256_or_etag": "c42b4a09bbab06b7e1f27043b7a4289dd075f4719db5f48ee7cd0e741eb36026",
+      "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+      "trace_id": ""
+    },
+    {
+      "source_key": "friendliness_receptivity_ex_ante_v4",
+      "source_title": "Composite ex-ante friendliness index from published components",
+      "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+      "retrieved_at": "not_applicable_calculated_from_component_passports",
+      "source_period": "2025",
+      "unit": "0-100 index",
+      "evidence_class": "calculated_ex_ante_index",
+      "sha256_or_etag": "ac86d45de1821009e231fc997d4297547e0b76c6b67d0ae134994aa86550dcd7",
+      "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+      "trace_id": ""
+    },
+    {
+      "source_key": "friendliness_receptivity_ex_ante_v4",
+      "source_title": "Composite ex-ante friendliness index from published components",
+      "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+      "retrieved_at": "not_applicable_calculated_from_component_passports",
+      "source_period": "2025",
+      "unit": "0-100 index",
+      "evidence_class": "calculated_ex_ante_index",
+      "sha256_or_etag": "869e3f04e0df0d593b71c7e30cd496252be19129b39d8dccffb11003d014f768",
+      "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+      "trace_id": ""
+    },
+    {
+      "source_key": "friendliness_receptivity_ex_ante_v4",
+      "source_title": "Composite ex-ante friendliness index from published components",
+      "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+      "retrieved_at": "not_applicable_calculated_from_component_passports",
+      "source_period": "2025",
+      "unit": "0-100 index",
+      "evidence_class": "calculated_ex_ante_index",
+      "sha256_or_etag": "0b6a89b1ee53a774f071de8dd737357a8182498b3d589d70833b6dc520b40ffa",
+      "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+      "trace_id": ""
+    },
+    {
+      "source_key": "friendliness_receptivity_ex_ante_v4",
+      "source_title": "Composite ex-ante friendliness index from published components",
+      "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+      "retrieved_at": "not_applicable_calculated_from_component_passports",
+      "source_period": "2025",
+      "unit": "0-100 index",
+      "evidence_class": "calculated_ex_ante_index",
+      "sha256_or_etag": "2076f27120c2a18e580882303695aedfa44157579aefd31f28cc18d6654571e4",
+      "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+      "trace_id": ""
+    },
+    {
+      "source_key": "friendliness_receptivity_ex_ante_v4",
+      "source_title": "Composite ex-ante friendliness index from published components",
+      "source_url_or_file": "data/model_outputs/current/friendliness_components.csv",
+      "retrieved_at": "not_applicable_calculated_from_component_passports",
+      "source_period": "2025",
+      "unit": "0-100 index",
+      "evidence_class": "calculated_ex_ante_index",
+      "sha256_or_etag": "5486b87faa14b02289dbf7d23101d029cd3830e480cfe316b195bc7340315a32",
+      "transform_script": "mgimo_platform2.models.friendliness_v2::build_friendliness_index_v3",
+      "trace_id": ""
+    }
+  ],
+  "handoffs": [
+    {
+      "href": "gap.html",
+      "label": {
+        "ru": "Сопоставить с разрывом",
+        "en": "Compare with gap"
+      }
+    },
+    {
+      "href": "matrix.html",
+      "label": {
+        "ru": "Добавить в матрицу",
+        "en": "Add to matrix"
+      }
+    }
+  ],
+  "interaction_chips": [
+    {
+      "ru": "границы",
+      "en": "bounds"
+    },
+    {
+      "ru": "покрытие",
+      "en": "coverage"
+    },
+    {
+      "ru": "недостающие компоненты",
+      "en": "missing components"
+    }
+  ],
+  "row_counts": {
+    "headline_metrics": 2,
+    "focus_rows": 12,
+    "source_items": 12,
+    "handoffs": 2,
+    "interaction_chips": 3
+  },
+  "field_definitions": {
+    "headline_metrics": {
+      "label": "Bilingual metric label.",
+      "value": "Displayed presentation value derived from listed input artifacts.",
+      "unit": "Human-readable unit; never converts missingness to zero.",
+      "evidence_class": "One of the project evidence classes.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "focus_rows": {
+      "id": "Stable presentation row identifier.",
+      "label": "Bilingual or source-native row label.",
+      "value": "Displayed value for linked selection and export.",
+      "unit": "Value unit.",
+      "evidence_class": "Evidence class for the row value.",
+      "detail": "Bilingual row explanation and semantic guardrail.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "source_items": "Deduplicated source/model provenance items collected from visible metrics and rows.",
+    "handoffs": "Cross-page analytical links that may carry selected context."
+  },
+  "acceptance_notes": [
+    "Point rank is hidden when rank interval is uninformative."
+  ]
+}

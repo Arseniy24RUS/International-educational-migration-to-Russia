@@ -1,0 +1,27 @@
+# Dependencies and local caches
+node_modules/
+.cache/
+.npm/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# Generated public artifact and QA outputs
+release/
+artifacts/
+playwright-report/
+test-results/
+worklogs/
+
+# Large/private source layers intentionally excluded from this public repo
+data/raw/
+data/curated/
+data/probes/
+data/model/
+
+# Local noise
+.DS_Store
+Thumbs.db
+*.log
+qa-*.out
+qa-*.err

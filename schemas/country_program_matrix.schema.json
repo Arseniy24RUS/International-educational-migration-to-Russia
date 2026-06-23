@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Country-program-language-instrument-effect matrix",
+  "type": "object",
+  "required": [
+    "iso3",
+    "country",
+    "program_group",
+    "teaching_language",
+    "recruitment_instrument",
+    "expected_effect_type",
+    "source_key",
+    "observation_status"
+  ],
+  "properties": {
+    "iso3": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "country": {
+      "type": "string"
+    },
+    "macroregion": {
+      "type": "string"
+    },
+    "program_group": {
+      "type": "string"
+    },
+    "teaching_language": {
+      "type": "string"
+    },
+    "recruitment_instrument": {
+      "type": "string"
+    },
+    "expected_effect_type": {
+      "type": "string"
+    },
+    "expected_effect_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "expected_effect_unit": {
+      "type": "string"
+    },
+    "evidence_basis": {
+      "type": "string"
+    },
+    "source_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_title": {
+      "type": "string"
+    },
+    "source_url_or_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "raw_value": {},
+    "unit": {
+      "type": "string"
+    },
+    "observation_status": {
+      "type": "string",
+      "enum": [
+        "official_or_reference",
+        "official_estimate",
+        "official_projection",
+        "harmonized_open_data",
+        "calculated",
+        "modelled",
+        "scenario_assumption_not_observed",
+        "missing_no_open_source",
+        "blocked_no_observed_inbound_flow"
+      ]
+    },
+    "license_or_terms": {
+      "type": "string"
+    },
+    "sha256_or_etag": {
+      "type": "string"
+    },
+    "transform_script": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

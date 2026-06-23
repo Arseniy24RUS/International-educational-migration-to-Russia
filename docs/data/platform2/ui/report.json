@@ -1,0 +1,388 @@
+{
+  "schema_version": "world-class-ui-mart-v1",
+  "asset_version": "20260622-world-class-ui1",
+  "route": "report",
+  "task": "5.2.12",
+  "generated_at_utc": "2026-06-22T00:00:00Z",
+  "title": {
+    "ru": "Конструктор ректорского доклада",
+    "en": "Executive report composer"
+  },
+  "management_question": {
+    "ru": "Какие выводы и ограничения должны попасть в управленческий доклад?",
+    "en": "Which findings and caveats belong in the executive report?"
+  },
+  "input_artifacts": [
+    {
+      "path": "docs/data/mgimo_platform2_payload.json",
+      "bytes": 5122712,
+      "sha256": "a18a05b6a24a594f2e1284daf37b8f70cd16dc6bb1e54b1c9f55df7fc9aac2b7"
+    },
+    {
+      "path": "docs/data/platform2/country_program_priority_v5.csv",
+      "bytes": 858096,
+      "sha256": "a1b67e0ab8395e64e3a96d6850a8f0b4aa74d0f8c3d71b10fd57141b7194cd4e"
+    },
+    {
+      "path": "docs/data/platform2/unrealized_potential_gap.csv",
+      "bytes": 382832,
+      "sha256": "825e69792d85599ebe7d057938a0d2b4619b731d72a85549d4139f1f0bd1ab81"
+    }
+  ],
+  "headline_metrics": [
+    {
+      "label": {
+        "ru": "Источник доклада",
+        "en": "Report source"
+      },
+      "value": {
+        "ru": "канонические артефакты",
+        "en": "canonical artifacts"
+      },
+      "unit": {
+        "ru": "политика сборки",
+        "en": "policy"
+      },
+      "evidence_class": "calculated",
+      "source": {
+        "source_key": "source_manifest_platform2",
+        "source_title": "Platform 2 source manifest and failed-attempt registry",
+        "source_url_or_file": "docs/data/platform2/source_manifest_platform2.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2026 release",
+        "unit": {
+          "ru": "паспорт источника",
+          "en": "source passport"
+        },
+        "evidence_class": "calculated",
+        "sha256_or_etag": "c7482382701005b2c7e0394d8355513999ef4f34f4a8ce20dbd62b987702a8c7",
+        "transform_script": "scripts/build_platform2_artifacts.py",
+        "trace_id": "sourceRegistry"
+      }
+    },
+    {
+      "label": {
+        "ru": "Паспортов источников",
+        "en": "Source passports"
+      },
+      "value": 23,
+      "unit": {
+        "ru": "источников",
+        "en": "sources"
+      },
+      "evidence_class": "calculated",
+      "source": {
+        "source_key": "source_manifest_platform2",
+        "source_title": "Platform 2 source manifest and failed-attempt registry",
+        "source_url_or_file": "docs/data/platform2/source_manifest_platform2.json",
+        "retrieved_at": "2026-06-22T00:00:00Z",
+        "source_period": "2026 release",
+        "unit": {
+          "ru": "паспорт источника",
+          "en": "source passport"
+        },
+        "evidence_class": "calculated",
+        "sha256_or_etag": "c7482382701005b2c7e0394d8355513999ef4f34f4a8ce20dbd62b987702a8c7",
+        "transform_script": "scripts/build_platform2_artifacts.py",
+        "trace_id": "sourceRegistry"
+      }
+    }
+  ],
+  "focus_rows": [
+    {
+      "id": "UKR",
+      "label": {
+        "ru": "Украина",
+        "en": "Ukraine"
+      },
+      "value": 14324.0553939345,
+      "unit": {
+        "ru": "доказательная строка",
+        "en": "report evidence"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Кандидат для управленческого вывода с ограничениями и приложением источников.",
+        "en": "Candidate executive finding with caveats and source appendix."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_uis_opri_wpp_distance_v1",
+        "source_title": "PPML gap calculation from verified UIS actual and modelled 2026 potential",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "2026-06-18T14:59:02+00:00",
+        "source_period": 2026,
+        "unit": "students",
+        "evidence_class": "calculated",
+        "sha256_or_etag": "297c6d699088d393cce151526429825e0bf392d20d40df01ecbdd64958524019",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_forecast",
+        "trace_id": "0103c9796d386102"
+      },
+      "iso3": "UKR",
+      "iso2": "UA",
+      "country_bearing": true
+    },
+    {
+      "id": "TUR",
+      "label": {
+        "ru": "Турция",
+        "en": "Türkiye"
+      },
+      "value": 8766.6448784062,
+      "unit": {
+        "ru": "доказательная строка",
+        "en": "report evidence"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Кандидат для управленческого вывода с ограничениями и приложением источников.",
+        "en": "Candidate executive finding with caveats and source appendix."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_uis_opri_wpp_distance_v1",
+        "source_title": "PPML gap calculation from verified UIS actual and modelled 2026 potential",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "2026-06-18T14:59:02+00:00",
+        "source_period": 2026,
+        "unit": "students",
+        "evidence_class": "calculated",
+        "sha256_or_etag": "297c6d699088d393cce151526429825e0bf392d20d40df01ecbdd64958524019",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_forecast",
+        "trace_id": "7c6ad2a3f6553879"
+      },
+      "iso3": "TUR",
+      "iso2": "TR",
+      "country_bearing": true
+    },
+    {
+      "id": "POL",
+      "label": {
+        "ru": "Польша",
+        "en": "Poland"
+      },
+      "value": 8495.7913302759,
+      "unit": {
+        "ru": "доказательная строка",
+        "en": "report evidence"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Кандидат для управленческого вывода с ограничениями и приложением источников.",
+        "en": "Candidate executive finding with caveats and source appendix."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_uis_opri_wpp_distance_v1",
+        "source_title": "PPML gap calculation from verified UIS actual and modelled 2026 potential",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "2026-06-18T14:59:02+00:00",
+        "source_period": 2026,
+        "unit": "students",
+        "evidence_class": "calculated",
+        "sha256_or_etag": "297c6d699088d393cce151526429825e0bf392d20d40df01ecbdd64958524019",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_forecast",
+        "trace_id": "ecefda5d91fbe63a"
+      },
+      "iso3": "POL",
+      "iso2": "PL",
+      "country_bearing": true
+    },
+    {
+      "id": "DEU",
+      "label": {
+        "ru": "Германия",
+        "en": "Germany"
+      },
+      "value": 6863.8730875467,
+      "unit": {
+        "ru": "доказательная строка",
+        "en": "report evidence"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Кандидат для управленческого вывода с ограничениями и приложением источников.",
+        "en": "Candidate executive finding with caveats and source appendix."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_uis_opri_wpp_distance_v1",
+        "source_title": "PPML gap calculation from verified UIS actual and modelled 2026 potential",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "2026-06-18T14:59:02+00:00",
+        "source_period": 2026,
+        "unit": "students",
+        "evidence_class": "calculated",
+        "sha256_or_etag": "297c6d699088d393cce151526429825e0bf392d20d40df01ecbdd64958524019",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_forecast",
+        "trace_id": "a7a6da2128e600c1"
+      },
+      "iso3": "DEU",
+      "iso2": "DE",
+      "country_bearing": true
+    },
+    {
+      "id": "PAK",
+      "label": {
+        "ru": "Пакистан",
+        "en": "Pakistan"
+      },
+      "value": 6563.3699526209,
+      "unit": {
+        "ru": "доказательная строка",
+        "en": "report evidence"
+      },
+      "evidence_class": "model_estimate",
+      "detail": {
+        "ru": "Кандидат для управленческого вывода с ограничениями и приложением источников.",
+        "en": "Candidate executive finding with caveats and source appendix."
+      },
+      "source": {
+        "source_key": "ppml_russia_inbound_uis_opri_wpp_distance_v1",
+        "source_title": "PPML gap calculation from verified UIS actual and modelled 2026 potential",
+        "source_url_or_file": "data/model/gravity_model_report.json",
+        "retrieved_at": "2026-06-18T14:59:02+00:00",
+        "source_period": 2026,
+        "unit": "students",
+        "evidence_class": "calculated",
+        "sha256_or_etag": "297c6d699088d393cce151526429825e0bf392d20d40df01ecbdd64958524019",
+        "transform_script": "scripts/build_platform2_artifacts.py::build_forecast",
+        "trace_id": "92bb667e6ab75b35"
+      },
+      "iso3": "PAK",
+      "iso2": "PK",
+      "country_bearing": true
+    }
+  ],
+  "source_items": [
+    {
+      "source_key": "source_manifest_platform2",
+      "source_title": "Platform 2 source manifest and failed-attempt registry",
+      "source_url_or_file": "docs/data/platform2/source_manifest_platform2.json",
+      "retrieved_at": "2026-06-22T00:00:00Z",
+      "source_period": "2026 release",
+      "unit": {
+        "ru": "паспорт источника",
+        "en": "source passport"
+      },
+      "evidence_class": "calculated",
+      "sha256_or_etag": "c7482382701005b2c7e0394d8355513999ef4f34f4a8ce20dbd62b987702a8c7",
+      "transform_script": "scripts/build_platform2_artifacts.py",
+      "trace_id": "sourceRegistry"
+    },
+    {
+      "source_key": "ppml_russia_inbound_uis_opri_wpp_distance_v1",
+      "source_title": "PPML gap calculation from verified UIS actual and modelled 2026 potential",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "2026-06-18T14:59:02+00:00",
+      "source_period": 2026,
+      "unit": "students",
+      "evidence_class": "calculated",
+      "sha256_or_etag": "297c6d699088d393cce151526429825e0bf392d20d40df01ecbdd64958524019",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_forecast",
+      "trace_id": "0103c9796d386102"
+    },
+    {
+      "source_key": "ppml_russia_inbound_uis_opri_wpp_distance_v1",
+      "source_title": "PPML gap calculation from verified UIS actual and modelled 2026 potential",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "2026-06-18T14:59:02+00:00",
+      "source_period": 2026,
+      "unit": "students",
+      "evidence_class": "calculated",
+      "sha256_or_etag": "297c6d699088d393cce151526429825e0bf392d20d40df01ecbdd64958524019",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_forecast",
+      "trace_id": "7c6ad2a3f6553879"
+    },
+    {
+      "source_key": "ppml_russia_inbound_uis_opri_wpp_distance_v1",
+      "source_title": "PPML gap calculation from verified UIS actual and modelled 2026 potential",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "2026-06-18T14:59:02+00:00",
+      "source_period": 2026,
+      "unit": "students",
+      "evidence_class": "calculated",
+      "sha256_or_etag": "297c6d699088d393cce151526429825e0bf392d20d40df01ecbdd64958524019",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_forecast",
+      "trace_id": "ecefda5d91fbe63a"
+    },
+    {
+      "source_key": "ppml_russia_inbound_uis_opri_wpp_distance_v1",
+      "source_title": "PPML gap calculation from verified UIS actual and modelled 2026 potential",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "2026-06-18T14:59:02+00:00",
+      "source_period": 2026,
+      "unit": "students",
+      "evidence_class": "calculated",
+      "sha256_or_etag": "297c6d699088d393cce151526429825e0bf392d20d40df01ecbdd64958524019",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_forecast",
+      "trace_id": "a7a6da2128e600c1"
+    },
+    {
+      "source_key": "ppml_russia_inbound_uis_opri_wpp_distance_v1",
+      "source_title": "PPML gap calculation from verified UIS actual and modelled 2026 potential",
+      "source_url_or_file": "data/model/gravity_model_report.json",
+      "retrieved_at": "2026-06-18T14:59:02+00:00",
+      "source_period": 2026,
+      "unit": "students",
+      "evidence_class": "calculated",
+      "sha256_or_etag": "297c6d699088d393cce151526429825e0bf392d20d40df01ecbdd64958524019",
+      "transform_script": "scripts/build_platform2_artifacts.py::build_forecast",
+      "trace_id": "92bb667e6ab75b35"
+    }
+  ],
+  "handoffs": [
+    {
+      "href": "platform2.html",
+      "label": {
+        "ru": "Вернуться к карте решений",
+        "en": "Return to decision map"
+      }
+    },
+    {
+      "href": "matrix.html",
+      "label": {
+        "ru": "Открыть матрицу действий",
+        "en": "Open action matrix"
+      }
+    }
+  ],
+  "interaction_chips": [
+    {
+      "ru": "вывод",
+      "en": "finding"
+    },
+    {
+      "ru": "источник",
+      "en": "source"
+    },
+    {
+      "ru": "PDF",
+      "en": "PDF"
+    }
+  ],
+  "row_counts": {
+    "headline_metrics": 2,
+    "focus_rows": 5,
+    "source_items": 6,
+    "handoffs": 2,
+    "interaction_chips": 3
+  },
+  "field_definitions": {
+    "headline_metrics": {
+      "label": "Bilingual metric label.",
+      "value": "Displayed presentation value derived from listed input artifacts.",
+      "unit": "Human-readable unit; never converts missingness to zero.",
+      "evidence_class": "One of the project evidence classes.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "focus_rows": {
+      "id": "Stable presentation row identifier.",
+      "label": "Bilingual or source-native row label.",
+      "value": "Displayed value for linked selection and export.",
+      "unit": "Value unit.",
+      "evidence_class": "Evidence class for the row value.",
+      "detail": "Bilingual row explanation and semantic guardrail.",
+      "source": "Source/model provenance object exposed through the drawer."
+    },
+    "source_items": "Deduplicated source/model provenance items collected from visible metrics and rows.",
+    "handoffs": "Cross-page analytical links that may carry selected context."
+  },
+  "acceptance_notes": []
+}

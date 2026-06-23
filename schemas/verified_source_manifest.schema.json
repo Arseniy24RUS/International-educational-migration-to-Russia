@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Verified source manifest row",
+  "type": "object",
+  "required": [
+    "source_id",
+    "url",
+    "retrieved_at_utc",
+    "bytes",
+    "sha256",
+    "row_count",
+    "validation_status"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "retrieved_at_utc": {
+      "type": "string"
+    },
+    "content_type": {
+      "type": "string"
+    },
+    "bytes": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "row_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "schema": {
+      "type": [
+        "array",
+        "object",
+        "null"
+      ]
+    },
+    "year_min": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "year_max": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "country_count": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "validation_status": {
+      "type": "string",
+      "enum": [
+        "ok",
+        "schema_extracted",
+        "blocked_empty",
+        "blocked_source_not_parsed",
+        "blocked_no_verified_origin_country_source"
+      ]
+    }
+  }
+}

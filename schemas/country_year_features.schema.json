@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Country-year features for migration model",
+  "type": "object",
+  "required": [
+    "iso3",
+    "year",
+    "feature_key",
+    "value",
+    "source_key",
+    "observation_status"
+  ],
+  "properties": {
+    "iso3": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 2010,
+      "maximum": 2050
+    },
+    "feature_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "normalized_value": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "source_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_title": {
+      "type": "string"
+    },
+    "source_url_or_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "raw_value": {},
+    "unit": {
+      "type": "string"
+    },
+    "observation_status": {
+      "type": "string",
+      "enum": [
+        "official_or_reference",
+        "official_estimate",
+        "official_projection",
+        "harmonized_open_data",
+        "calculated",
+        "modelled",
+        "scenario_assumption_not_observed",
+        "missing_no_open_source",
+        "blocked_no_observed_inbound_flow"
+      ]
+    },
+    "license_or_terms": {
+      "type": "string"
+    },
+    "sha256_or_etag": {
+      "type": "string"
+    },
+    "transform_script": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
