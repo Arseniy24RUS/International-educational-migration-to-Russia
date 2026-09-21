@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="850" viewBox="0 0 1000 850" role="img" aria-labelledby="title desc">
+  <title id="title">Migration platform: official data to static analytical UI</title>
+  <desc id="desc">Official and attributed sources become published data views, model outputs and static pages with source passports and explicit methodological boundaries.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M2 2 L12 7 L2 12 Z" fill="#20314f"/>
+    </marker>
+    <style>
+      .bg{fill:#f7f8fb}
+      .box{fill:#fff;stroke:#20314f;stroke-width:2.4}
+      .soft{fill:#e9edf7}
+      .badge{fill:#f7d36f;stroke:#20314f;stroke-width:1.8}
+      .text{font-family:Arial, sans-serif;fill:#1b273d;font-size:22px;letter-spacing:0}
+      .title{font-weight:700;font-size:28px}
+      .boxhead{font-weight:700;font-size:25px}
+      .small{font-size:22px}
+      .muted{fill:#5b6678;font-size:20px}
+      .badgeText{font-size:20px}
+      .line{stroke:#20314f;stroke-width:3;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" width="1000" height="850"/>
+  <text class="text title" x="52" y="58">Migration platform: official data to static analytical UI</text>
+  <rect class="box soft" x="70" y="90" width="860" height="240" rx="10"/>
+<text class="text boxhead" x="98" y="132">Official and attributed sources</text>
+<text class="text small" x="98" y="172">UNESCO UIS OPRI student stock</text>
+<text class="text small" x="98" y="200">UN WPP, World Bank and UN voting data</text>
+<text class="text small" x="98" y="228">MGIMO facts, Trudvsem and Natural Earth</text>
+<text class="text small muted" x="98" y="286">Each source keeps licence notes and retrieval dates.</text>
+  <line class="line" x1="500" y1="342" x2="500" y2="366"/>
+  <rect class="box" x="70" y="370" width="860" height="220" rx="10"/>
+<text class="text boxhead" x="98" y="412">Published data views and model outputs</text>
+<text class="text small" x="98" y="452">source manifests and source passports</text>
+<text class="text small" x="98" y="480">observed UIS stock and country-year features</text>
+<text class="text small" x="98" y="508">PPML model card, scenarios and gap matrix</text>
+<rect class="badge" x="564" y="524" width="332" height="44" rx="8"/>
+<text class="text small badgeText" x="582" y="552">Stock is not annual intake</text>
+  <line class="line" x1="500" y1="602" x2="500" y2="628"/>
+  <rect class="box" x="70" y="630" width="860" height="165" rx="10"/>
+<text class="text boxhead" x="98" y="672">Static Pages interface</text>
+<text class="text small" x="98" y="712">country observation and source panel</text>
+<text class="text small" x="98" y="740">model diagnostics and forecast slider</text>
+<text class="text small" x="98" y="768">gap ranking, program matrix and report builder</text>
+  <rect class="box" x="105" y="810" width="790" height="34" rx="8"/>
+  <text class="text small" x="125" y="834">Scenario: country -&gt; observed stock -&gt; source passport -&gt; model -&gt; forecast</text>
+</svg>
